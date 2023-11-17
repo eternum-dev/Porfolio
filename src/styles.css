@@ -1,0 +1,94 @@
+:root {
+  font-size: 62.5%;
+
+  --white: #fffeef;
+  --black: #212223;
+  --veryBlack: #1d1e1f;
+  --brown: #765b41;
+  --gray: #dbdac5;
+  --yellow: #ff9800;
+  /* font-family: 'Kanit', sans-serif; */
+
+  --tobacco-brown-50: #f5f4ef;
+  --tobacco-brown-100: #eae6d7;
+  --tobacco-brown-200: #d7cfb2;
+  --tobacco-brown-300: #c0b087;
+  --tobacco-brown-400: #ac9662;
+  --tobacco-brown-500: #9c8354;
+  --tobacco-brown-600: #856b47;
+  /* --tobacco-brown-700: #765b41; */
+  --tobacco-brown-800: #33271f;
+  --tobacco-brown-900: #291f19;
+  --tobacco-brown-950: #2d211b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--tobacco-brown-100);
+  font-family: "Kanit", sans-serif;
+}
+
+body {
+  scroll-behavior: smooth;
+  min-width: 100vw;
+  min-height: 100%;
+  background-color: var(--black);
+}
+
+h1 {
+  font-size: 6rem;
+  font-weight: 700;
+  color: var(--tobacco-brown-300);
+}
+h2 {
+  font-size: 3.5rem;
+  margin: 0;
+  font-weight: 700;
+  color: var(--tobacco-brown-200);
+}
+h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--tobacco-brown-200);
+}
+h4,
+a,
+button {
+  font-size: 1.6rem;
+}
+button {
+  background-color: var(--tobacco-brown-400);
+  color: var(--tobacco-brown-950);
+  font-weight: 300;
+  padding: 1rem 1.5rem;
+  border: 0;
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+button:hover {
+  background-color: var(--tobacco-brown-300);
+  color: var(--tobacco-brown-950);
+}
+button:active {
+  background-color: var(--tobacco-brown-500);
+  color: var(--tobacco-brown-950);
+}
+button:disabled {
+  background-color: var(--tobacco-brown-800);
+  color: var(--tobacco-brown-100);
+}
+h5,
+p {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+li {
+  list-style: none;
+  font-size: 1.5rem;
+}
+a {
+  text-decoration: none;
+}
