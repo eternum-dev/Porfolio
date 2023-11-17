@@ -1,0 +1,36 @@
+.skill__section {
+  padding: 2rem;
+  background-color: #1d1e1f;
+  border-radius: 0.5rem;
+}
+
+.skill__container {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  margin: 2rem 0;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  border: 1px solid var(--brown);
+  border-radius: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.card__header {
+  position: absolute;
+  top: -2rem;
+  background: #1d1e1f;
+  padding: 0 2rem;
+}
+.card__title {
+  text-transform: capitalize;
+}
+.card__img {
+  width: clamp(60px, 100%, 100px);
+  object-fit: cover;
+}

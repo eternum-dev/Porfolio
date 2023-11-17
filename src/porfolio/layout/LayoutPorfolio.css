@@ -1,0 +1,28 @@
+.LayoutPorfolio {
+  width: clamp(275px, 100vw, calc(1440px - 2rem));
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  margin: 0 auto;
+  padding: 0 2rem;
+  gap: 2rem;
+}
+
+.main {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  margin: auto;
+  gap: 2rem;
+}
+/* title page */
+main h1 {
+  text-align: center;
+}
+
+
+@media (min-width: 765px) {
+  main h1 {
+    text-align: initial;
+  }
+}

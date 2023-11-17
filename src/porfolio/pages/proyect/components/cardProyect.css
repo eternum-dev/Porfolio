@@ -1,0 +1,31 @@
+.proyect__card {
+  padding: 2rem;
+  border-radius: 1rem;
+  border: 1px solid var(--brown);
+  height: 100%;
+}
+.proyect__header {
+  position: relative;
+  top: -3.5rem;
+  background-color: #1d1e1f;
+  padding: 0 2rem;
+  width: fit-content;
+  margin: 0 auto;
+}
+.proyect__img {
+  width: calc(100%);
+  max-height: 250px;
+  object-fit: cover;
+  position: relative;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.tec {
+  display: flex;
+  gap: 1rem;
+}
+.tec__container {
+  display: flex;
+  flex-direction: column;
+  /* overflow: hidden; */
+}
