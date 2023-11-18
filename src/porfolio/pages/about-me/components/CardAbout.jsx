@@ -1,8 +1,9 @@
+import PropTypes from 'prop-types';
 
-
+let i = 1;
 
 export const CardAbout = ({ al }) => {
-    
+
     return (
         <article className="about__article" key={i++ * 10}>
             <div className="about__content">
@@ -12,4 +13,8 @@ export const CardAbout = ({ al }) => {
             <img src={`${al.img}`} alt="certificate" />
         </article>
     )
+}
+
+CardAbout.propTypes = {
+    al: PropTypes.any
 }
