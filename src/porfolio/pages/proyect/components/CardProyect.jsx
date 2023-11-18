@@ -17,9 +17,9 @@ export const CardProyect = ({ proyect }) => {
             </header>
             <img src={proyect.img} alt={proyect.name} className="proyect__img" />
 
-            <p className="proyect__description">{proyect.description}</p>
 
             <div className='tec'>
+                <p className="proyect__description">{proyect.description}</p>
                 {
                     proyect.tecnologias.map(tec => (
                         <div key={tec.name} className='tec__container'>

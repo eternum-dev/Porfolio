@@ -1,7 +1,9 @@
-# mi portafolio personal 
+# mi portafolio personal
+
     este es mi portafolio personal como front-end developer donde iré subiendo mis proyectos personales, trabajos, skills, y mas datos sobre mi
 
 ## Tabla de Contenidos
+
 - [Visión general](#visión-general)
   - [Proyecto](#proyecto)
   - [Capturas de pantalla](#capturas-de-pantalla)
@@ -17,21 +19,23 @@
 
 ### Proyecto
 
-En este proyecto las personas deberian poder ver y entender que habilidades poseo.
+    En este proyecto las personas deberian poder ver y entender que habilidades poseo.
 
 ### Capturas de pantalla
 
 #### Escritorio
+
 <image src="src\assets\images\nameImage.png" alt="nameImage">
 
 #### Móvil
+
 <image src="src\assets\images\nameImage.png" alt="nameImage">
 
 ## Mi Proceso
 
 ### Desarrollado con
 
-- React 
+- React
 - React Router Dom
 - JavaScript
 - Vite
@@ -43,21 +47,25 @@ En este proyecto las personas deberian poder ver y entender que habilidades pose
 ### Instalación
 
 #### Clonar este repositorio
+
 `git clone https://github.com/eternum-dev/my-personal-porfolio.git`
 
 #### Acceder al archivo Nombre Proyecto
+
 `cd ./my-personal-porfolio`
 
 #### Instalar Dependencias
-`npm install`
 
+`npm install`
 
 ### Scripts del proyecto
 
 #### Iniciar el proyecto
+
 `npm run dev`
 
 #### Construir para producción
+
 `npm run build`
 
 ## Autor
