@@ -14,7 +14,10 @@
   grid-area: logo;
   width: fit-content;
 }
-
+.header__link  img {
+  height: 7rem;
+  
+}
 .header__nav {
   margin: 0 auto;
   grid-area: hamburger;

@@ -1,4 +1,5 @@
 import { LayoutPorfolio } from '../../layout/LayoutPorfolio';
+import { SectionSkill } from './components/SectionSkill';
 import './skillsPage.css';
 
 const arrStack = [
@@ -68,24 +69,7 @@ export const SkillPage = () => {
                 <h1>skills</h1>
                 {
                     arrStack.map(stack => (
-                        <section key={i++} className="skill__section">
-                            <h2 className="skill__title">{stack.nameCategory}</h2>
-                            <div className='skill__container'>
-                                {
-                                    stack.technology.map(technology => (
-                                        <article key={technology.name} className='card'>
-                                            <header className='card__header'>
-                                                <h3 className='card__title'>{technology.name}</h3>
-                                            </header>
-                                            <img className='card__img' src={technology.icon} alt={technology.name} />
-                                        </article>
-                                    ))
-                                }
-
-                            </div>
-
-                        </section>
-
+                        <SectionSkill key={i++} stack={stack} />
                     ))
                 }
             </>

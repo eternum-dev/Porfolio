@@ -7,32 +7,5 @@
   top: -10rem;
 }
 
-.home__card {
-  min-height: 20rem;
-  border-bottom: 10px solid var(--tobacco-brown-300);
-  position: relative;
-  background-color: #1d1e1f;
-  padding: 2rem 2.5rem;
-  border-radius: 1rem;
-  gap: 1rem;
-  display: grid;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  margin: 0 2rem;
-}
-.home__card h3 {
-  font-size: 2.5rem;
-  text-transform: capitalize;
-}
-.home__card p {
-  font-size: 1.5rem;
-}
-.home__card--dis {
-  margin: 12rem 0 5em;
-}
-.home__card--dis > header > h3,
-p {
-  color: var(--white);
-}
-
 @media (min-width: 765px) {
 }

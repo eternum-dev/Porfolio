@@ -8,7 +8,7 @@ export const TopHeader = () => {
     return (
         <header className='header'>
             <Link className='header__link' to="/home">
-                <img src="#" alt="logo" />
+                <img src="src\assets\logo.png" alt="logo" />
             </Link>
             
             <nav className='header__nav'>

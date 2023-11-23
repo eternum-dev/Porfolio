@@ -1,33 +1,25 @@
 import PropTypes from 'prop-types';
 import './cardProyect.css';
 
-let i = 0;
-
-
 
 
 export const CardProyect = ({ proyect }) => {
 
-
-
     return (
-        <article key={++i} className="proyect__card">
-            <header className='proyect__header'>
-                <h3 className="proyect__title">{proyect.name}</h3>
-            </header>
+        <article className='card'>
             <img src={proyect.img} alt={proyect.name} className="proyect__img" />
-
-
+            <header>
+                <h3>{proyect.name}</h3>
+            </header>
             <div className='tec'>
                 <p className="proyect__description">{proyect.description}</p>
-                {
-                    proyect.tecnologias.map(tec => (
-                        <div key={tec.name} className='tec__container'>
-                            <h4 className='tec__title'>{tec.name}</h4>
-                            <img src={tec.img} alt={tec.name} className='tec__img' />
-                        </div>
-                    ))
-                }
+                <div className='tec__container'>
+                    {
+                        proyect.tecnologias.map(tec => (
+                            <img src={tec.img} alt={tec.name} className='tec__img' key={tec.name} />
+                        ))
+                    }
+                </div>
             </div>
         </article>
     )
