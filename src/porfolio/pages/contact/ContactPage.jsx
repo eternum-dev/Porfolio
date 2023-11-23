@@ -4,6 +4,7 @@ import './contactPage.css';
 
 
 export const ContactPage = () => {
+    
     return (
         <LayoutPorfolio>
             <>
@@ -46,5 +47,6 @@ export const ContactPage = () => {
 
 
         </LayoutPorfolio>
+
     )
 }

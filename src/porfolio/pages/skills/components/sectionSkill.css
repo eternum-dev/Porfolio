@@ -1,0 +1,12 @@
+.skill__section {
+  padding: 2rem;
+  background-color: #1d1e1f;
+  border-radius: 0.5rem;
+}
+
+.skill__container {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  margin: 2rem 0;
+}

@@ -53,6 +53,7 @@
 @media (min-width: 750px) {
   .contact {
     grid-template-columns: 1fr 10px 1fr;
+    grid-template-rows: 1fr;
   }
   .contact__hr {
     width: 3px;
