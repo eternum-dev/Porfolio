@@ -28,17 +28,20 @@
   box-sizing: border-box;
   color: var(--tobacco-brown-100);
   font-family: "Kanit", sans-serif;
+  
 }
 
 body {
   scroll-behavior: smooth;
   min-width: 100vw;
   min-height: 100%;
-  background-color: var(--black);
+  background-color: var(--veryBlack);
+  overflow-x: hidden;
+  
 }
 
 h1 {
-  font-size: 6rem;
+  font-size: 5rem;
   font-weight: 700;
   color: var(--tobacco-brown-300);
 }
@@ -46,49 +49,37 @@ h2 {
   font-size: 3.5rem;
   margin: 0;
   font-weight: 700;
-  color: var(--tobacco-brown-200);
+  color: var(--tobacco-brown-50);
 }
 h3 {
   font-size: 2rem;
   font-weight: 500;
-  color: var(--tobacco-brown-200);
+  color: var(--tobacco-brown-50);
 }
 h4,
 a,
 button {
   font-size: 1.6rem;
 }
-button {
-  background-color: var(--tobacco-brown-400);
-  color: var(--tobacco-brown-950);
-  font-weight: 300;
-  padding: 1rem 1.5rem;
-  border: 0;
-  border-radius: 0.4rem;
-  cursor: pointer;
-}
-button:hover {
-  background-color: var(--tobacco-brown-300);
-  color: var(--tobacco-brown-950);
-}
-button:active {
-  background-color: var(--tobacco-brown-500);
-  color: var(--tobacco-brown-950);
-}
-button:disabled {
-  background-color: var(--tobacco-brown-800);
-  color: var(--tobacco-brown-100);
-}
+
 h5,
 p {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 300;
+  text-wrap: balance;
 }
 
 li {
   list-style: none;
   font-size: 1.5rem;
+  line-height: 1.5;
 }
 a {
   text-decoration: none;
+  width: fit-content;
+}
+button{
+  width: fit-content;
+  background-color: inherit;
+  border: 0;
 }

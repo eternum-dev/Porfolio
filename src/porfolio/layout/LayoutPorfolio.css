@@ -1,18 +1,20 @@
 .LayoutPorfolio {
-  width: clamp(275px, 100vw, calc(1440px - 2rem));
+  width: clamp(275px, 100vw, calc(1220px - 2rem));
   min-height: 100vh;
   display: grid;
   grid-template-rows: auto 1fr auto;
   margin: 0 auto;
   padding: 0 2rem;
   gap: 2rem;
+  background-color: var(--black);
 }
 
 .main {
-  height: 100%;
-  width: 100%;
+  width: calc(100% );
   display: grid;
-  margin: auto;
+  grid-template:
+  "title" auto
+  "body" 1fr ;
   gap: 2rem;
 }
 /* title page */

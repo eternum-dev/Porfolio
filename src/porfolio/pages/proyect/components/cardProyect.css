@@ -1,22 +1,36 @@
-.card{
+.cardProyect {
   padding: 2rem;
   background-color: var(--veryBlack);
+  border-radius: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 .proyect__img {
-  width: calc(100%);
+  width: calc(100% + 4rem);
   max-height: 250px;
   object-fit: cover;
   position: relative;
-  border-radius: 0.5rem 0.5rem 0 0;
+  border-radius: 1rem 1rem 0 0;
+  top: -2rem;
+  left: -2rem;
 }
-
+.cardProyect__header {
+  margin: 1rem 0 0rem;
+  align-self: self-start;
+}
 .tec {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
-  margin: 1rem 0;
+  gap: 3rem;
+  margin-bottom: 1.5rem ;
+}
+.tec__img {
+  width: 2.5rem;
 }
 .tec__container {
   display: flex;
   gap: 1rem;
+  margin-top: auto;
 }

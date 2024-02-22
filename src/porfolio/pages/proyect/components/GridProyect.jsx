@@ -9,6 +9,7 @@ let i = 0;
 export const GridProyect = ({ allProyect }) => {
 
     return (
+
         <section className="proyect__grid">
             {
                 allProyect.map(proyect => (
@@ -16,10 +17,12 @@ export const GridProyect = ({ allProyect }) => {
                 ))
             }
         </section>
+
+
     )
 }
 
 GridProyect.propTypes = {
-    allProyect: PropTypes.arrayOf(PropTypes.object).isRequired,
+    allProyect: PropTypes.any
 };
 
