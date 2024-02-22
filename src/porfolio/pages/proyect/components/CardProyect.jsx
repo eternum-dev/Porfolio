@@ -9,7 +9,7 @@ export const CardProyect = ({ proyect }) => {
         <article className='cardProyect'>
             <img src={proyect.img} alt={proyect.name} className="proyect__img" />
 
-            <div className='tec'>
+            <div className='cardProyect__info'>
                 <header className='cardProyect__header'>
                     <h3>{proyect.name}</h3>
                 </header>
