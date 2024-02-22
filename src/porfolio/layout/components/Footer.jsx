@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import './footer.css';
 
 
@@ -6,22 +6,45 @@ export const Footer = () => {
     return (
         <footer className='footer'>
             <Link className='footer__link' to="/home" >
-                <img src="#" alt="logo" />
+                <img src="src\assets\logo.png" alt="logo" />
             </Link>
             <nav className='footer__nav'>
-                <h4>pages</h4>
-                <ul className='footer__ul'>
-                    <li className='footer__li'>social</li>
-                    <li className='footer__li'>about</li>
-                    <li className='footer__li'>redes</li>
-                    <li className='footer__li'>otro</li>
-                </ul>
+                <NavLink
+                    to='/proyect'
+                    className={({ isActive }) => `navlink ${isActive ? 'isActive' : ''}`}
+                >
+                    proyect
+                </NavLink>
+                <NavLink
+                    to='/about'
+                    className={({ isActive }) => `navlink ${isActive ? 'isActive' : ''}`}
+                >
+                    about
+                </NavLink>
+                <NavLink
+                    to='/skills'
+                    className={({ isActive }) => `navlink ${isActive ? 'isActive' : ''}`}
+                >
+                    skills
+                </NavLink>
             </nav>
             <div className='footer__social'>
                 <h4>redes</h4>
                 <ul className='footer__ul'>
-                    <li><Link><img src="#" alt="linkedin" /></Link></li>
-                    <li><Link><img src="#" alt="gitHub" /></Link></li>
+                    <Link to='https://www.linkedin.com/in/alejandrothon/' target='_blank'>
+                        <img
+                            src="src\assets\icons\LinkedIn.svg"
+                            alt="linkedin"
+                            className='footer__icon'
+                        />
+                    </Link>
+                    <Link to='https://github.com/eternum-dev' target='_blank'>
+                        <img
+                            src="src\assets\icons\GitHub.svg"
+                            alt="gitHub"
+                            className='footer__icon'
+                        />
+                    </Link>
                 </ul>
             </div>
         </footer>

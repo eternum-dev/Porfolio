@@ -1,7 +1,7 @@
 /* header top */
 .header {
   display: grid;
-  grid-template: "hamburger logo contact" / 1fr 3fr 1fr;
+  grid-template: "logo  hamburger";
   width: 100%;
   grid-auto-flow: column;
   justify-content: space-between;
@@ -9,21 +9,45 @@
   padding: 2rem;
   background-color: var(--veryBlack);
   box-shadow: rgba(0, 0, 0, 0.24) 5px 12px 10px;
+  position: relative;
 }
 .header__link {
   grid-area: logo;
   width: fit-content;
 }
-.header__link  img {
-  height: 7rem;
-  
+.header__link img {
+  height: 5rem;
 }
 .header__nav {
-  margin: 0 auto;
-  grid-area: hamburger;
+  /* margin: 0 auto;
+   
   display: flex;
-  gap: 1.5rem;
+  gap: 1.5rem;*/
   display: none;
+  grid-area: hamburger;
+}
+.navBar {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  position: absolute;
+  top: 5rem;
+  right: -2.5em;
+  width: 50vw;
+  height: clamp(10rem, 100vh, 40rem);
+  background-color: var(--veryBlack);
+  z-index: 2;
+}
+.navBar__button {
+  margin: 1rem;
+  justify-self: end;
+}
+
+.navbar-links {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  align-items: center;
+  padding: 2.5rem 2rem;
 }
 .navlink {
   font-size: 1.5rem;
@@ -33,22 +57,64 @@
   transition: all 300ms;
 }
 
-.header__button {
-  grid-area: contact;
-  margin-left: auto;
-  max-width: 150px;
+.header > .header__button {
+  display: none;
+}
+.hr {
+  width: 50%;
+  height: 2px;
+  background-color: #fff;
+}
+
+.navBar__hamburger{
+  height: 3rem;
+  width: 3rem;
+}
+.navBar__hamburger--rotate {
+  transform: rotate(45deg);
+}
+
+.disable {
+  display: none;
 }
 
 @media (min-width: 765px) {
   .header {
-    grid-template:
-      "logo hamburger contact"
-      /1fr 3fr 1fr;
+    grid-template: "logo hamburger contact" / 1fr 3fr 1fr;
   }
   .header__ul {
     display: flex;
   }
   .header__nav {
     display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .navBar {
+    position: static;
+    right: 0;
+  }
+  .navbar-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    gap: 2rem;
+  }
+  .navbar-links > .header__button {
+    display: none;
+  }
+  .header__button {
+    justify-self: end;
+  }
+
+  .hr {
+    display: none;
+  }
+  .navBar__button {
+    display: none;
+  }
+  .header > .header__button {
+    display: block;
   }
 }

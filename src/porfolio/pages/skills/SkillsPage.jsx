@@ -51,7 +51,7 @@ const arrStack = [
                 icon: 'src/assets/stack-tech-icon/Git.svg'
             }, {
                 name: 'github',
-                icon: 'src/assets/stack-tech-icon/GitHub.svg'
+                icon: 'src/assets/icons/GitHub.svg'
             },
             {
                 name: 'figma',

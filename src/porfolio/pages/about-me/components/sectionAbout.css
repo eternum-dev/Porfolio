@@ -1,6 +1,9 @@
+.about{
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
 .about__section {
-  padding: 2rem;
-  background-color: #1d1e1f;
   border-radius: 0.5rem;
 }
 .about__title {

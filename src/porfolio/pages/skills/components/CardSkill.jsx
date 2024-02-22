@@ -3,11 +3,11 @@ import './cardSkill.css';
 
 export const CardSkill = ({ technology }) => {
     return (
-        <article key={technology.name} className='card'>
-            <header className='card__header'>
-                <h3 className='card__title'>{technology.name}</h3>
+        <article key={technology.name} className='cardSkill'>
+            <header className='cardSkill__header'>
+                <h3 className='cardSkill__title'>{technology.name}</h3>
             </header>
-            <img className='card__img' src={technology.icon} alt={technology.name} />
+            <img className='cardSkill__img' src={technology.icon} alt={technology.name} />
         </article>
     )
 }

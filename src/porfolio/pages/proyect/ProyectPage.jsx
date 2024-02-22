@@ -19,138 +19,71 @@ export const ProyectPage = () => {
 
 const arrProyect = [{
     name: 'ip- address-tracker',
-    img: 'src/assets/mockup-mobil.png',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Id ratione perspiciatis, hic sequi sunt impedit!',
+    img: 'src/assets/mocks/ip-address-tracker.png',
+    description: `
+    Desarrollé 'IP Address Tracker' para Frontend Mentor, una app web que utiliza APIs de geolocalización y mapas para ofrecer información detallada de IPs. Emocionado por futuras mejoras. 🌐🚀`,
     tecnologias: [
         {
-            name: 'html',
-            img: '#'
+            name: 'HTML5'
         },
         {
-            name: 'css',
-            img: '#'
+            name: 'CSS3'
         },
         {
-            name: 'javaScrip',
-            img: '#'
-        },
-        {
-            name: 'react',
-            img: '#'
-        },
-        {
-            name: 'vitest',
-            img: '#'
-        },
+            name: 'JavaScript'
+        }
     ]
 },
 {
-    name: 'ip- address-tracker',
-    img: 'src/assets/mockup-mobil.png',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Id ratione perspiciatis, hic sequi sunt impedit!',
+    name: 'age calculator',
+    img: 'src/assets/mocks/age-calculator.png',
+    description: 'Completé el proyecto "Age Calculator" en desarrollo web, usando HTML, CSS y JavaScript. Reforzó mi comprensión y mejoró mis habilidades. Emocionado por avanzar. 🌐🚀',
     tecnologias: [
         {
-            name: 'html',
-            img: '#'
+            name: 'HTML5'
         },
         {
-            name: 'css',
-            img: '#'
+            name: 'CSS3'
         },
         {
-            name: 'javaScrip',
-            img: '#'
-        },
-        {
-            name: 'react',
-            img: '#'
-        },
-        {
-            name: 'vitest',
-            img: '#'
-        },
+            name: 'JavaScript'
+        }
     ]
 },
 {
-    name: 'ip- address-tracker',
-    img: 'src/assets/mockup-mobil.png',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Id ratione perspiciatis, hic sequi sunt impedit!',
+    name: 'sherter-url',
+    img: 'src/assets/mocks/short-url.png',
+    description: 'Desarrollé una app web que acorta enlaces eficientemente, priorizando la experiencia mobile-first y la estructura semántica. Destaca mi habilidad para integrar tecnologías externas en un entorno web interactivo. 🚀🔗📱✨',
     tecnologias: [
         {
-            name: 'html',
-            img: '#'
+            name: 'HTML5'
         },
         {
-            name: 'css',
-            img: '#'
+            name: 'CSS3'
         },
         {
-            name: 'javaScrip',
-            img: '#'
-        },
-        {
-            name: 'react',
-            img: '#'
-        },
-        {
-            name: 'vitest',
-            img: '#'
-        },
+            name: 'JavaScript'
+        }
     ]
 },
 {
-    name: 'ip- address-tracker',
-    img: 'src/assets/mockup-mobil.png',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Id ratione perspiciatis, hic sequi sunt impedit!',
+    name: 'porfolio',
+    img: 'src/assets/mocks/porfolio.png',
+    description: '🌐 Este es mi portafolio web, donde documentaré mi desarrollo profesional y compartiré todos mis proyectos. ¡Explora y conoce mi trayectoria! 🚀',
     tecnologias: [
         {
-            name: 'html',
-            img: '#'
+            name: 'HTML5',
         },
         {
-            name: 'css',
-            img: '#'
+            name: 'CSS3',
         },
         {
-            name: 'javaScrip',
-            img: '#'
+            name: 'JavaScript',
         },
         {
             name: 'react',
-            img: '#'
-        },
-        {
-            name: 'vitest',
-            img: '#'
-        },
+        }
     ]
-},
-{
-    name: 'ip- address-tracker ',
-    img: 'src/assets/mockup-mobil.png',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Id ratione perspiciatis, hic sequi sunt impedit!',
-    tecnologias: [
-        {
-            name: 'html',
-            img: '#'
-        },
-        {
-            name: 'css',
-            img: '#'
-        },
-        {
-            name: 'javaScrip',
-            img: '#'
-        },
-        {
-            name: 'react',
-            img: '#'
-        },
-        {
-            name: 'vitest',
-            img: '#'
-        },
-    ]
-},
+}
 
 ]
