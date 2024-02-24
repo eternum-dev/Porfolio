@@ -11,10 +11,12 @@ export const SectionBotton = () => {
                     <h3>Sobre mi</h3>
                 </header>
                 <p className='home__parrafo'>
-                    ¡Soy ale! desarrollador frontend 
+                    ¡Soy ale! tengo 28 años soy desarrollador frontend autodidacta.
+                    LLevo +4 años en el mundo del desarrollo  y una toda mi vida enamorado de la tecnología.
                 </p>
                 <p className='home__parrafo' >
-                    +4 años en el mundo de la progrmacion y estamos solo comenzando 💪💪
+                    Desde la primera vez que tuve un computador supe que de alguna forma viviria de esto.
+                    Mi mamá  dice  literalemente nací mirando la pantalla.
                 </p>
             </article>
 
@@ -22,13 +24,13 @@ export const SectionBotton = () => {
 
             <article className="home__card">
                 <header>
-                    <h3>Abordando Desafíos con Innovación</h3>
+                    <h3>Abordando Nuevos Desafíos</h3>
                 </header>
                 <p className='home__parrafo'>
-                    Utilizo herramientas web e inteligencia artificial,  para superar desafíos en la creación de imágenes, textos, estilos css y más.
+                    En mi busqueda de especializarme para dar la mejor experiencia al usuario, he aprendido diversas herramientas como librerias, frameworks, inteligencia artificial entre otros.
                 </p>
                 <p>
-                    mi búsqueda constante de aprendizaje refleja mi compromiso con la mejora continua. Un ejemplo  de estos son estas imagenes que cree apartir de diferentes tecnologías.
+                    Estoy constantemente  conectado con la comunidad de la programacion, tanto por linkedin, discord youtube y twitch lo que  siempreme hace estar al tanto nuevas tecnologias y tendencias. 
                 </p>
             </article>
 
