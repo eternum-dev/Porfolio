@@ -23,16 +23,15 @@
   border-radius: 2rem;
   background-color: var(--veryBlack);
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
   flex-direction: column;
 }
 .home__card header {
   margin: 1.5rem 0 1rem;
 }
-/* .home__parrafo {
-  overflow: hidden;
-  text-overflow: ellipsis;
-} */
+ .home__parrafo {
+  font-size: 1.8em;
+} 
 .home__img{
   height: 100%;
 }

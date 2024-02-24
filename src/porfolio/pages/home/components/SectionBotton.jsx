@@ -8,13 +8,13 @@ export const SectionBotton = () => {
 
             <article className="home__card">
                 <header>
-                    <h3>Quien soy ? </h3>
+                    <h3>Sobre mi</h3>
                 </header>
                 <p className='home__parrafo'>
-                    Soy un apasionado desarrollador frontend autodidacta, guiado por la curiosidad y la sed de conocimiento.
+                    ¡Soy ale! desarrollador frontend 
                 </p>
-                <p>
-                    Mi capacidad para adaptarme me permite  abrazar cambios y desafíos con entusiasmo. Me sumerjo en el aprendizaje, explorando nuevas tecnologías y tendencias para impulsar experiencias digitales.
+                <p className='home__parrafo' >
+                    +4 años en el mundo de la progrmacion y estamos solo comenzando 💪💪
                 </p>
             </article>
 
