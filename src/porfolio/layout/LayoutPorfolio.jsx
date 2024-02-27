@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import './LayoutPorfolio.css';
 import { TopHeader, Footer } from './components'
-import { AboutMePage, HomePage } from '../pages';
+import { AboutMePage, ContactPage, HomePage, ProyectPage, SkillPage } from '../pages';
 
 
 
@@ -14,7 +14,10 @@ export const LayoutPorfolio = () => {
 
             <main className='main'>
                 <HomePage />
+                <ProyectPage />
+                <SkillPage />
                 <AboutMePage />
+                <ContactPage />
 
             </main>
 

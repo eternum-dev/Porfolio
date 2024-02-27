@@ -1,4 +1,4 @@
-import { LayoutPorfolio } from '../../layout/LayoutPorfolio';
+
 import { SectionSkill } from './components/SectionSkill';
 import './skillsPage.css';
 
@@ -64,16 +64,13 @@ const arrStack = [
 export const SkillPage = () => {
     let i = 0
     return (
-        <LayoutPorfolio>
-            <>
-                <h1>skills</h1>
-                {
-                    arrStack.map(stack => (
-                        <SectionSkill key={i++} stack={stack} />
-                    ))
-                }
-            </>
-
-        </LayoutPorfolio>
+        <>
+            <h1>skills</h1>
+            {
+                arrStack.map(stack => (
+                    <SectionSkill key={i++} stack={stack} />
+                ))
+            }
+        </>
     )
 }

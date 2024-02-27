@@ -1,4 +1,3 @@
-import { LayoutPorfolio } from '../../layout/LayoutPorfolio';
 import { GridProyect } from './components/GridProyect';
 import './proyectPage.css';
 
@@ -7,12 +6,10 @@ import './proyectPage.css';
 export const ProyectPage = () => {
 
     return (
-        <LayoutPorfolio >
-            <>
-                <h1 className="proyect__title">proyect</h1>
-                <GridProyect allProyect={arrProyect} />
-            </>
-        </LayoutPorfolio>
+        <>
+            <h1 className="proyect__title">proyect</h1>
+            <GridProyect allProyect={arrProyect} />
+        </>
     )
 }
 
