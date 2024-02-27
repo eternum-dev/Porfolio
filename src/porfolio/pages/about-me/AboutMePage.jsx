@@ -1,17 +1,14 @@
-import { LayoutPorfolio } from '../../layout/LayoutPorfolio';
+
 import './aboutMePage.css';
 import { SectionAbout } from './components/SectionAbout';
 
 
 export const AboutMePage = () => {
     return (
-        <LayoutPorfolio>
-            <>
-                <h1> AboutMePage</h1>
-                <SectionAbout abouts={arrAbout} />
-
-            </>
-        </LayoutPorfolio>
+        <>
+            <h1> AboutMePage</h1>
+            <SectionAbout abouts={arrAbout} />
+        </>
     )
 }
 
