@@ -1,10 +1,11 @@
 import PropTypes from 'prop-types';
 import './LayoutPorfolio.css';
 import { TopHeader, Footer } from './components'
+import { AboutMePage, HomePage } from '../pages';
 
 
 
-export const LayoutPorfolio = ({ children }) => {
+export const LayoutPorfolio = () => {
 
     return (
         <div className='LayoutPorfolio'>
@@ -12,7 +13,9 @@ export const LayoutPorfolio = ({ children }) => {
             <TopHeader />
 
             <main className='main'>
-                {children}
+                <HomePage />
+                <AboutMePage />
+
             </main>
 
             {/* footer */}
