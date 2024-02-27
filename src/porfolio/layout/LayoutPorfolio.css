@@ -1,10 +1,10 @@
 .LayoutPorfolio {
-  width: clamp(275px, 100vw, calc(1220px - 2rem));
+  width: clamp(275px, 100vw, calc(1220px - 4rem));
   min-height: 100vh;
   display: grid;
   grid-template-rows: auto 1fr auto;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 4rem;
   gap: 2rem;
   background-color: var(--black);
 }
@@ -15,7 +15,7 @@
   grid-template:
   "title" auto
   "body" 1fr ;
-  gap: 2rem;
+  gap: 5rem;
 }
 /* title page */
 main h1 {
