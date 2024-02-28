@@ -20,7 +20,7 @@ export const TopHeader = () => {
 
     return (
         <header className='header'>
-            <Link className='header__link' to="/home">
+            <Link className='header__link' to="/#home">
                 <img src="src\assets\logo.png" alt="logo" />
             </Link>
 
@@ -30,19 +30,19 @@ export const TopHeader = () => {
             >
                 <div className='navbar-links'>
                     <NavLink
-                        to='/proyect'
+                        to='/#proyect'
                         className={({ isActive }) => `navlink ${isActive ? 'isActive' : ''}`}
                     >
                         proyect
                     </NavLink>
                     <NavLink
-                        to='/about'
+                        to='/#about'
                         className={({ isActive }) => `navlink ${isActive ? 'isActive' : ''}`}
                     >
                         about me
                     </NavLink>
                     <NavLink
-                        to='/skills'
+                        to='/#skills'
                         className={({ isActive }) => `navlink ${isActive ? 'isActive' : ''}`}
                     >
                         skills

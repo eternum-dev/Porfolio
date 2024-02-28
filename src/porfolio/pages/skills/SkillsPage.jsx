@@ -64,13 +64,13 @@ const arrStack = [
 export const SkillPage = () => {
     let i = 0
     return (
-        <>
+        <div id='skills'>
             <h1>skills</h1>
             {
                 arrStack.map(stack => (
                     <SectionSkill key={i++} stack={stack} />
                 ))
             }
-        </>
+        </div>
     )
 }

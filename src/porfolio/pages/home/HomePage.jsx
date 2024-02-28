@@ -6,11 +6,10 @@ import './homePage.css';
 
 export const HomePage = () => {
     return (
-
-        <>
+        <div id='home'>
             <SectionTop />
             <SectionBotton />
-        </>
+        </div>
 
     )
 }

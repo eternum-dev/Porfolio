@@ -6,10 +6,10 @@ import './proyectPage.css';
 export const ProyectPage = () => {
 
     return (
-        <>
+        <div id='proyect'>
             <h1 className="proyect__title">proyect</h1>
             <GridProyect allProyect={arrProyect} />
-        </>
+        </div>
     )
 }
 

@@ -5,10 +5,10 @@ import { SectionAbout } from './components/SectionAbout';
 
 export const AboutMePage = () => {
     return (
-        <>
+        <div id='about'>
             <h1> AboutMePage</h1>
             <SectionAbout abouts={arrAbout} />
-        </>
+        </div>
     )
 }
 
@@ -60,4 +60,4 @@ const arrAbout = [
             }
         ]
     }
-]
+] 

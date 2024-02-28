@@ -4,8 +4,8 @@
   display: grid;
   justify-items: center;
   grid-template:
-    "yo yo"
-    "card card"
+    "yo yo"   1fr 
+    "card card" 
     "desk desk"
     "card2 card2 "
     / 1fr 0.75fr;
@@ -51,9 +51,9 @@
 @media (min-width: 600px) {
   .home__section-bot {
     grid-template:
-      "card  desk"
-      "yo desk"
-      "yo card2" 1fr / 1fr .9fr;
+      "card  desk" auto
+      "yo desk" 1fr 
+      "yo card2" auto / 1fr .9fr;
     gap: 4rem;
   }
 }
