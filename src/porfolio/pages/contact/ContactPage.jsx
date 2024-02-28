@@ -13,7 +13,7 @@ export const ContactPage = () => {
     }
 
     return (
-        <>
+        <div id='contactPage'>
             <h1>Contact</h1>
             <section className="contact">
                 <article className="contact__article">
@@ -81,6 +81,6 @@ export const ContactPage = () => {
 
                 </article>
             </section>
-        </>
+        </div>
     )
 }

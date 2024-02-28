@@ -14,9 +14,13 @@ export const LayoutPorfolio = () => {
 
             <main className='main'>
                 <HomePage />
+                <hr />
                 <ProyectPage />
+                <hr />
                 <SkillPage />
+                <hr />
                 <AboutMePage />
+                <hr />
                 <ContactPage />
 
             </main>

@@ -6,7 +6,7 @@
   margin: 0 auto;
   padding: 0 4rem;
   gap: 2rem;
-  background-color: var(--black);
+  /* background-color: var(--black); */
 }
 
 .main {
