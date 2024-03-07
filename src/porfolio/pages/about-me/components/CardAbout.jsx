@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import './cardAbout.css';
 import { useRef } from 'react';
 
-let i = 1;
 
 export const CardAbout = ({ data }) => {
     const refContainer = useRef();
@@ -13,7 +12,7 @@ export const CardAbout = ({ data }) => {
     }
 
     return (
-        <article className="about__article" key={i++ * 10}>
+        <article className="about__article"  >
             <div className="about__content">
                 <h3 className='about__subtitle'>{data.subTitle}</h3>
                 <p>{data.descrription}</p>
