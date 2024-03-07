@@ -5,7 +5,7 @@ import './footer.css';
 export const Footer = () => {
     return (
         <footer className='footer'>
-            <Link className='footer__link' to="/home" >
+            <Link className='footer__link' to="/" >
                 <img src="src\assets\logo.png" alt="logo" />
             </Link>
             <nav className='footer__nav'>
