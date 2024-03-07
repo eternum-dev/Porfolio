@@ -2,6 +2,7 @@ import { Link, NavLink } from 'react-router-dom';
 import './topheader.css';
 import { ContactButton } from '../../components/ContactButton';
 import { useRef } from 'react';
+import { useScrollNavigate } from '../../../hooks/useScrollNavigate';
 
 
 
@@ -17,9 +18,12 @@ export const TopHeader = () => {
         closeMenuRef.current.classList.toggle('disable');
     }
 
+    useScrollNavigate();
 
     return (
-        <header className='header'>
+        <header
+            className='header'
+            >
             <Link className='header__link' to="/#home">
                 <img src="src\assets\logo.png" alt="logo" />
             </Link>
@@ -31,7 +35,7 @@ export const TopHeader = () => {
                 <div className='navbar-links'>
                     <NavLink
                         to='/#proyect'
-                        className={({ isActive }) => `navlink ${isActive ? 'isActive' : ''}`}
+                        className={({ isActive, }) => `navlink ${isActive ? 'isActive' : ''}`}
                     >
                         proyect
                     </NavLink>
