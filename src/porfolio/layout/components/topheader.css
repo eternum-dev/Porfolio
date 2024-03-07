@@ -9,7 +9,8 @@
   padding: 2rem;
   background-color: var(--veryBlack);
   box-shadow: rgba(0, 0, 0, 0.24) 5px 12px 10px;
-  position: relative;
+  position: sticky;
+  top: 0;
 }
 .header__link {
   grid-area: logo;

@@ -1,7 +1,7 @@
 :root {
   font-size: 62.5%;
 
-  --white: #fffeef;
+  --white: #fffef0;
   --black: #212223;
   --veryBlack: #1d1e1f;
   --brown: #765b41;
@@ -22,15 +22,9 @@
   --tobacco-brown-950: #2d211b;
 }
 html {
-  --s: 20px; /* control the size */
-
-  --_g: #0000 83%, var(--veryBlack) 85% 99%, #0000 101%;
-  background: radial-gradient(27% 29% at right, var(--_g)) calc(var(--s) / 2)
-      var(--s),
-    radial-gradient(27% 29% at left, var(--_g)) calc(var(--s) / -2) var(--s),
-    radial-gradient(29% 27% at top, var(--_g)) 0 calc(var(--s) / 2),
-    radial-gradient(29% 27% at bottom, var(--_g)) 0 calc(var(--s) / -2) var(--black);
-  background-size: calc(2 * var(--s)) calc(2 * var(--s));
+  background-image: radial-gradient(circle, #06080a, #0d0f10, #131415, #171819, #1b1c1d, #1b1c1d, #1b1c1d, #1b1c1d, #171819, #131415, #0d0f10, #06080a);
+  background-position: center center;
+  background-attachment: fixed;
 }
 * {
   margin: 0;
@@ -45,6 +39,8 @@ body {
   min-width: 100vw;
   min-height: 100%;
   overflow-x: hidden;
+
+
 }
 
 h1 {
