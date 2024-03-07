@@ -7,12 +7,18 @@ import { AboutMePage, ContactPage, HomePage, ProyectPage, SkillPage } from '../p
 
 export const LayoutPorfolio = () => {
 
+    const handleScroll = (event) => {
+        console.log({event});
+    }
+
     return (
-        <div className='LayoutPorfolio'>
+        <div className='LayoutPorfolio'
+            onScrollCapture={ handleScroll}
+        >
             {/* top Header */}
             <TopHeader />
 
-            <main className='main'>
+            <main className='main' >
                 <HomePage />
                 <hr />
                 <ProyectPage />
@@ -22,7 +28,6 @@ export const LayoutPorfolio = () => {
                 <AboutMePage />
                 <hr />
                 <ContactPage />
-
             </main>
 
             {/* footer */}
