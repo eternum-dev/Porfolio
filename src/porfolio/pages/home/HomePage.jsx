@@ -5,11 +5,9 @@ import './homePage.css';
 
 
 export const HomePage = () => {
-    const handleScroll = (event) => {
-        console.log({ event });
-    }
+
     return (
-        <div id='home' onScroll={handleScroll}>
+        <div id='home' >
             <SectionTop />
             <SectionBotton />
         </div>
