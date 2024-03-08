@@ -19,11 +19,15 @@ export const TopHeader = () => {
     }
 
     useScrollNavigate();
+    const scrollEvent = () => {
+        console.log(window.scrollY);
+    }
+    window.addEventListener('scroll', scrollEvent);
 
     return (
         <header
             className='header'
-            >
+        >
             <Link className='header__link' to="/#home">
                 <img src="src\assets\logo.png" alt="logo" />
             </Link>
