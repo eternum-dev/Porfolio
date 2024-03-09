@@ -19,8 +19,9 @@ export const TopHeader = () => {
     }
 
     useScrollNavigate();
+
     const scrollEvent = () => {
-        console.log(window.scrollY);
+        // console.log(window.scrollY);
     }
     window.addEventListener('scroll', scrollEvent);
 
@@ -44,16 +45,16 @@ export const TopHeader = () => {
                         proyect
                     </NavLink>
                     <NavLink
-                        to='/#about'
-                        className={({ isActive }) => `navlink ${isActive ? 'isActive' : ''}`}
-                    >
-                        about me
-                    </NavLink>
-                    <NavLink
                         to='/#skills'
                         className={({ isActive }) => `navlink ${isActive ? 'isActive' : ''}`}
                     >
                         skills
+                    </NavLink>
+                    <NavLink
+                        to='/#about'
+                        className={({ isActive }) => `navlink ${isActive ? 'isActive' : ''}`}
+                    >
+                        about me
                     </NavLink>
 
                     <div className='hr'></div>
