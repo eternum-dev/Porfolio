@@ -4,7 +4,7 @@
   display: grid;
   grid-template-rows: auto 1fr auto;
   margin: 0 auto;
-  padding: 0 4rem;
+  padding: 0 1rem;
   gap: 2rem;
   scroll-padding-top: 100px;
 }
@@ -23,6 +23,9 @@ main h1 {
 }
 
 @media (min-width: 765px) {
+  .LayoutPorfolio {
+    padding: 0 4rem;
+  }
   main h1 {
     text-align: initial;
   }
