@@ -29,7 +29,6 @@ export const Footer = () => {
                 </NavLink>
             </nav>
             <div className='footer__social'>
-                <h4>redes</h4>
                 <ul className='footer__ul'>
                     <Link to='https://www.linkedin.com/in/alejandrothon/' target='_blank'>
                         <img

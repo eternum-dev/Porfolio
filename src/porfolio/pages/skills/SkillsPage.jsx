@@ -20,7 +20,7 @@ const arrStack = [
             {
                 name: 'react',
                 icon: 'src/assets/stack-tech-icon/React.svg'
-            }
+            },
         ]
     },
     {
@@ -40,6 +40,20 @@ const arrStack = [
             {
                 name: 'cypress',
                 icon: 'src/assets/stack-tech-icon/Cypress.svg'
+            },{
+                name: 'css',
+                icon: 'src/assets/stack-tech-icon/CSS3.svg'
+            }, {
+                name: 'js',
+                icon: 'src/assets/stack-tech-icon/JavaScript.svg'
+            },
+            {
+                name: 'html',
+                icon: 'src/assets/stack-tech-icon/HTML5.svg'
+            },
+            {
+                name: 'react',
+                icon: 'src/assets/stack-tech-icon/React.svg'
             }
         ]
     },
