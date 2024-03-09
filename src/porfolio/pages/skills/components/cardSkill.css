@@ -4,14 +4,17 @@
   gap: 1.5rem;
   padding: 2rem;
   border-radius: 0.5rem;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center; */
   border-radius: 1rem;
   background-color: var(--veryBlack);
 }
 
 .cardSkill__title {
   text-transform: capitalize;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
 }
 .cardSkill__img {
   width: clamp(60px, 100%, 100px);
