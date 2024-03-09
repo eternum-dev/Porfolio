@@ -17,7 +17,7 @@ export const useScrollNavigate = () => {
                 let position = element.getBoundingClientRect();
                 window.scrollTo({
                     left: position.left,
-                    top: position.top + window.scrollY - 140,
+                    top: position.top + window.scrollY - 132,
                     behavior: 'smooth'
                 })
                 // element.scrollIntoView({ behavior: 'smooth', block: 'start' });
