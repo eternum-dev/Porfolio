@@ -1,11 +1,20 @@
 
+import { useRef } from 'react';
+import { useIntersectionUrlUpdater } from '../../../hooks/useIntersectionUrlUpdater';
 import './aboutMePage.css';
 import { SectionAbout } from './components/SectionAbout';
 
 
 export const AboutMePage = () => {
+    const aboutRef = useRef();
+    
+    useIntersectionUrlUpdater(aboutRef)
+
     return (
-        <div id='about'>
+        <div
+            id='about'
+            ref={aboutRef}
+        >
             <h1> AboutMePage</h1>
             <SectionAbout abouts={arrAbout} />
         </div>

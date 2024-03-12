@@ -1,12 +1,20 @@
+import { useRef } from 'react';
 import { GridProyect } from './components/GridProyect';
 import './proyectPage.css';
+import { useIntersectionUrlUpdater } from '../../../hooks/useIntersectionUrlUpdater';
 
 
 
 export const ProyectPage = () => {
 
+    const proyectRef = useRef();
+    useIntersectionUrlUpdater(proyectRef);
+    
     return (
-        <div id='proyect'>
+        <div
+            id='proyect'
+            ref={proyectRef}
+        >
             <h1 className="proyect__title">proyect</h1>
             <GridProyect allProyect={arrProyect} />
         </div>

@@ -1,6 +1,8 @@
 
+import { useRef } from 'react';
 import { SectionSkill } from './components/SectionSkill';
 import './skillsPage.css';
+import { useIntersectionUrlUpdater } from '../../../hooks/useIntersectionUrlUpdater';
 
 const arrStack = [
     {
@@ -40,7 +42,7 @@ const arrStack = [
             {
                 name: 'cypress',
                 icon: 'src/assets/stack-tech-icon/Cypress.svg'
-            },{
+            }, {
                 name: 'css',
                 icon: 'src/assets/stack-tech-icon/CSS3.svg'
             }, {
@@ -77,8 +79,15 @@ const arrStack = [
 
 export const SkillPage = () => {
     let i = 0
+
+    const skillsRef = useRef();
+    useIntersectionUrlUpdater(skillsRef);
+
     return (
-        <div id='skills'>
+        <div
+            id='skills'
+            ref={skillsRef}
+        >
             <h1>skills</h1>
             {
                 arrStack.map(stack => (
