@@ -9,7 +9,8 @@ import { Separadores } from '../components/Separadores';
 
 export const PorfolioRoutes = () => {
   return (
-    <Routes>
+    <Routes>   
+      
       <Route
         path="/"
         element={
