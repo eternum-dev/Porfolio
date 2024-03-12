@@ -19,7 +19,6 @@ export const PorfolioRoutes = () => {
             <Separadores />
 
 
-
             <ProyectPage />
             <Separadores />
 
