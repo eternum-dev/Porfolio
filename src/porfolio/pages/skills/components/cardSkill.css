@@ -20,6 +20,7 @@
   width: clamp(60px, 100%, 100px);
   object-fit: cover;
   transition:  all 200ms;
+  margin: 0 auto;
 }
 .cardSkill:hover .cardSkill__img {
   transform: scale(1.1);
