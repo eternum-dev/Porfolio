@@ -24,7 +24,10 @@
 .header__nav {
   display: none;
   grid-area: hamburger;
+<<<<<<< HEAD
   
+=======
+>>>>>>> 898b149323e263a1ba0d41fba94dd74beb3a868c
 }
 .navBar {
   display: grid;
@@ -36,7 +39,10 @@
   height: clamp(10rem, 100vh, 40rem);
   background-color: var(--veryBlack);
   z-index: 2;
+<<<<<<< HEAD
   /* animation: animeNav .5s ease 0s 1 normal none; */
+=======
+>>>>>>> 898b149323e263a1ba0d41fba94dd74beb3a868c
 }
 .navBar__button {
   margin: 1rem;
@@ -49,7 +55,10 @@
   gap: 5rem;
   align-items: center;
   padding: 2.5rem 2rem;
+<<<<<<< HEAD
   
+=======
+>>>>>>> 898b149323e263a1ba0d41fba94dd74beb3a868c
 }
 .navlink {
   font-size: 1.5rem;
@@ -95,7 +104,10 @@
   .navBar {
     position: static;
     right: 0;
+<<<<<<< HEAD
     animation: none;
+=======
+>>>>>>> 898b149323e263a1ba0d41fba94dd74beb3a868c
   }
   .navbar-links {
     display: flex;
@@ -121,6 +133,7 @@
     display: block;
   }
 }
+<<<<<<< HEAD
 
 @keyframes animeNav {
   0% {
@@ -135,3 +148,5 @@
     transform-origin: right;
   }
 }
+=======
+>>>>>>> 898b149323e263a1ba0d41fba94dd74beb3a868c

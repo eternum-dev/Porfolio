@@ -1,16 +1,26 @@
+<<<<<<< HEAD
 import { Link, NavLink, useLocation } from 'react-router-dom';
 import './topheader.css';
 import { ContactButton } from '../../components/ContactButton';
 import {  useRef  } from 'react';
+=======
+import { Link, NavLink } from 'react-router-dom';
+import './topheader.css';
+import { ContactButton } from '../../components/ContactButton';
+import { useRef } from 'react';
+>>>>>>> 898b149323e263a1ba0d41fba94dd74beb3a868c
 import { useScrollNavigate } from '../../../hooks/useScrollNavigate';
 
 
 
 export const TopHeader = () => {
+<<<<<<< HEAD
     const location = useLocation();
 
 
 
+=======
+>>>>>>> 898b149323e263a1ba0d41fba94dd74beb3a868c
     const navRef = useRef();
     const openMenuRef = useRef();
     const closeMenuRef = useRef();
@@ -24,6 +34,7 @@ export const TopHeader = () => {
 
     useScrollNavigate();
 
+<<<<<<< HEAD
     // const scrollEvent = () => {
     //     // console.log(window.scrollY);
     // }
@@ -39,6 +50,13 @@ export const TopHeader = () => {
 
     const proyects = 'proyect';
     
+=======
+    const scrollEvent = () => {
+        // console.log(window.scrollY);
+    }
+    window.addEventListener('scroll', scrollEvent);
+
+>>>>>>> 898b149323e263a1ba0d41fba94dd74beb3a868c
     return (
         <header
             className='header'
@@ -53,8 +71,13 @@ export const TopHeader = () => {
             >
                 <div className='navbar-links'>
                     <NavLink
+<<<<<<< HEAD
                         to={`/#${proyects}`}
                         className={() => `navlink ${functi(proyects)}`}
+=======
+                        to='/#proyect'
+                        className={({ isActive, }) => `navlink ${isActive ? 'isActive' : ''}`}
+>>>>>>> 898b149323e263a1ba0d41fba94dd74beb3a868c
                     >
                         proyect
                     </NavLink>

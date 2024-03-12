@@ -1,12 +1,18 @@
+<<<<<<< HEAD
 import { useRef } from 'react';
 import { GridProyect } from './components/GridProyect';
 import './proyectPage.css';
 import { useIntersectionUrlUpdater } from '../../../hooks/useIntersectionUrlUpdater';
+=======
+import { GridProyect } from './components/GridProyect';
+import './proyectPage.css';
+>>>>>>> 898b149323e263a1ba0d41fba94dd74beb3a868c
 
 
 
 export const ProyectPage = () => {
 
+<<<<<<< HEAD
     const proyectRef = useRef();
     useIntersectionUrlUpdater(proyectRef);
     
@@ -15,6 +21,10 @@ export const ProyectPage = () => {
             id='proyect'
             ref={proyectRef}
         >
+=======
+    return (
+        <div id='proyect'>
+>>>>>>> 898b149323e263a1ba0d41fba94dd74beb3a868c
             <h1 className="proyect__title">proyect</h1>
             <GridProyect allProyect={arrProyect} />
         </div>

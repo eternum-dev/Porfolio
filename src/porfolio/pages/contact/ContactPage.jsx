@@ -1,12 +1,20 @@
 import { Link } from 'react-router-dom';
 import './contactPage.css';
 import { useForm } from '../../../hooks/useForm';
+<<<<<<< HEAD
+=======
+import { Footer, TopHeader } from '../../layout/components';
+>>>>>>> 898b149323e263a1ba0d41fba94dd74beb3a868c
 
 
 export const ContactPage = () => {
     const { onInputChange, formState } = useForm();
 
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 898b149323e263a1ba0d41fba94dd74beb3a868c
     const onSubmit = (event) => {
         event.preventDefault();
         console.log(formState);
@@ -14,6 +22,10 @@ export const ContactPage = () => {
 
     return (
         <div>
+<<<<<<< HEAD
+=======
+            <TopHeader />
+>>>>>>> 898b149323e263a1ba0d41fba94dd74beb3a868c
             <div id='contactPage'>
                 <h1>Contact</h1>
                 <section className="contact">
@@ -83,6 +95,11 @@ export const ContactPage = () => {
                     </article>
                 </section>
             </div>
+<<<<<<< HEAD
+=======
+
+            <Footer/>
+>>>>>>> 898b149323e263a1ba0d41fba94dd74beb3a868c
         </div>
 
     )
