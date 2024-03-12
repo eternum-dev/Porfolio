@@ -1,7 +1,8 @@
 import { Navigate, Route, Routes } from 'react-router-dom';
 // import { AboutMePage, HomePage, SkillPage, ContactPage, ProyectPage } from '../pages';
 import { LayoutPorfolio } from '../layout/LayoutPorfolio';
-import { ContactPage } from '../pages';
+import { AboutMePage, ContactPage, HomePage, ProyectPage, SkillPage } from '../pages';
+import { Separadores } from '../components/Separadores';
 
 
 
@@ -9,8 +10,34 @@ import { ContactPage } from '../pages';
 export const PorfolioRoutes = () => {
   return (
     <Routes>
-      <Route path="/" element={<LayoutPorfolio />} />
-      <Route path="/contact" element={<ContactPage />} />
+      <Route
+        path="/"
+        element={
+          <LayoutPorfolio>
+            <HomePage />
+            <Separadores />
+
+            <ProyectPage />
+            <Separadores />
+
+            <SkillPage />
+            <Separadores />
+
+            <AboutMePage />
+            <Separadores />
+
+          </LayoutPorfolio>}
+
+      />
+
+      <Route
+        path="/contact"
+        element={
+          <LayoutPorfolio>
+            <ContactPage />
+          </LayoutPorfolio>
+        }
+      />
 
       {/* error page 
         <ErrorPage />

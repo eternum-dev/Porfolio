@@ -25,7 +25,7 @@ export const useIntersectionUrlUpdater = (componentRef) => {
         return () => {
             observer.disconnect();
         };
-    }, [componentRef]);
+    }, []);
 
     return {
 

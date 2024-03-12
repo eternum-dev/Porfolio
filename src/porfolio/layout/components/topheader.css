@@ -36,7 +36,7 @@
   height: clamp(10rem, 100vh, 40rem);
   background-color: var(--veryBlack);
   z-index: 2;
-  animation: animeNav .5s ease 0s 1 normal none;
+  /* animation: animeNav .5s ease 0s 1 normal none; */
 }
 .navBar__button {
   margin: 1rem;
@@ -95,6 +95,7 @@
   .navBar {
     position: static;
     right: 0;
+    animation: none;
   }
   .navbar-links {
     display: flex;

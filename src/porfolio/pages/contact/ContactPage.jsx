@@ -1,13 +1,12 @@
 import { Link } from 'react-router-dom';
 import './contactPage.css';
 import { useForm } from '../../../hooks/useForm';
-import { Footer, TopHeader } from '../../layout/components';
 
 
 export const ContactPage = () => {
     const { onInputChange, formState } = useForm();
 
-
+    
     const onSubmit = (event) => {
         event.preventDefault();
         console.log(formState);
@@ -15,7 +14,6 @@ export const ContactPage = () => {
 
     return (
         <div>
-            <TopHeader />
             <div id='contactPage'>
                 <h1>Contact</h1>
                 <section className="contact">
@@ -85,8 +83,6 @@ export const ContactPage = () => {
                     </article>
                 </section>
             </div>
-
-            <Footer/>
         </div>
 
     )

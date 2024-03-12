@@ -1,12 +1,16 @@
-import { Link, NavLink } from 'react-router-dom';
+import { Link, NavLink, useLocation } from 'react-router-dom';
 import './topheader.css';
 import { ContactButton } from '../../components/ContactButton';
-import { useRef } from 'react';
+import {  useRef  } from 'react';
 import { useScrollNavigate } from '../../../hooks/useScrollNavigate';
 
 
 
 export const TopHeader = () => {
+    const location = useLocation();
+
+
+
     const navRef = useRef();
     const openMenuRef = useRef();
     const closeMenuRef = useRef();
@@ -20,11 +24,21 @@ export const TopHeader = () => {
 
     useScrollNavigate();
 
-    const scrollEvent = () => {
-        // console.log(window.scrollY);
-    }
-    window.addEventListener('scroll', scrollEvent);
+    // const scrollEvent = () => {
+    //     // console.log(window.scrollY);
+    // }
+    // window.addEventListener('scroll', scrollEvent);
 
+    const functi = (proyects) => {
+        const hash = location.hash.slice(1);
+        if (hash === proyects) {
+            return 'isActive'
+        }
+        return ''
+    }
+
+    const proyects = 'proyect';
+    
     return (
         <header
             className='header'
@@ -39,8 +53,8 @@ export const TopHeader = () => {
             >
                 <div className='navbar-links'>
                     <NavLink
-                        to='/#proyect'
-                        className={({ isActive, }) => `navlink ${isActive ? 'isActive' : ''}`}
+                        to={`/#${proyects}`}
+                        className={() => `navlink ${functi(proyects)}`}
                     >
                         proyect
                     </NavLink>
