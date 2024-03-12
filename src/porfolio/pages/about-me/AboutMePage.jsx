@@ -1,17 +1,13 @@
-
-<<<<<<< HEAD
 import { useRef } from 'react';
 import { useIntersectionUrlUpdater } from '../../../hooks/useIntersectionUrlUpdater';
-=======
->>>>>>> 898b149323e263a1ba0d41fba94dd74beb3a868c
 import './aboutMePage.css';
 import { SectionAbout } from './components/SectionAbout';
 
 
 export const AboutMePage = () => {
-<<<<<<< HEAD
+
     const aboutRef = useRef();
-    
+
     useIntersectionUrlUpdater(aboutRef)
 
     return (
@@ -19,10 +15,6 @@ export const AboutMePage = () => {
             id='about'
             ref={aboutRef}
         >
-=======
-    return (
-        <div id='about'>
->>>>>>> 898b149323e263a1ba0d41fba94dd74beb3a868c
             <h1> AboutMePage</h1>
             <SectionAbout abouts={arrAbout} />
         </div>
