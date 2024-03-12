@@ -2,18 +2,13 @@
   width: 100%;
   min-height: 30vh;
   display: grid;
+  grid-template-rows: 1fr 1fr 1fr ;
   justify-items: center;
-  grid-template:
-    "yo yo"   1fr 
-    "card card" 
-    "desk desk"
-    "card2 card2 "
-    / 1fr 0.75fr;
   gap: 2rem;
 }
 
 .home__img {
-  width: clamp(18rem, 100%, 500rem);
+  width: clamp(10rem, 100%, 45rem);
   object-fit: cover;
   border-radius: 1rem;
 }
@@ -25,6 +20,8 @@
   display: flex;
   gap: 1rem;
   flex-direction: column;
+  height: fit-content;
+  align-self: center;
 }
 .home__card header {
   margin: 1.5rem 0 1rem;
@@ -35,7 +32,7 @@
 .home__img{
   height: 100%;
 }
-.home__img:nth-child(1) {
+/* .home__img:nth-child(1) {
   grid-area: yo;
 }
 .home__img:nth-child(3) {
@@ -46,14 +43,12 @@
 }
 .home__card:nth-child(4) {
   grid-area: card2;
-}
+} */
 
 @media (min-width: 600px) {
   .home__section-bot {
-    grid-template:
-      "card  desk" auto
-      "yo desk" 1fr 
-      "yo card2" auto / 1fr .9fr;
-    gap: 4rem;
+    grid-template-columns: 1fr 1fr 30px ;
+    grid-template-rows: 1fr ;
   }
+  
 }
