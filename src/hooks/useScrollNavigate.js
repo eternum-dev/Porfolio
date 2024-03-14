@@ -15,12 +15,11 @@ export const useScrollNavigate = () => {
 
             if (element) {
                 let position = element.getBoundingClientRect();
+                
                 window.scrollTo({
-                    left: position.left,
                     top: position.top + window.scrollY - 132,
                     behavior: 'smooth'
                 })
-                // element.scrollIntoView({ behavior: 'smooth', block: 'start' });
             }
         }
     }, [location]);
