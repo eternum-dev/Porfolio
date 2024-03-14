@@ -1,3 +1,4 @@
+import { Networks } from '../../../components/Networks';
 import './sectionBotton.css';
 
 
@@ -20,8 +21,10 @@ export const SectionBotton = () => {
             </article>
 
 
-            <div>
-                redes
+            <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', padding: '1.5rem 1rem', gap: '1rem', background:'#ccc' }}>
+                <Networks alt='linkedin' path='https://www.linkedin.com/in/alejandrothon/'/> 
+                <Networks alt='github' path='https://github.com/eternum-dev'/> 
+                <Networks alt='email' path='alejandro.thon.j@gmail.com'/> 
             </div>
         </section>
     )

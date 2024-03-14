@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useForm } from '../../../hooks/useForm';
 import './contactPage.css';
+import { Networks } from '../../components/Networks';
 
 
 
@@ -9,7 +10,7 @@ import './contactPage.css';
 export const ContactPage = () => {
 
     const { onInputChange, formState } = useForm();
-    
+
     const onSubmit = (event) => {
         event.preventDefault();
         console.log(formState);
@@ -25,10 +26,9 @@ export const ContactPage = () => {
                             <h3>social</h3>
                         </header>
                         <div className='contact__wrapper'>
-                            <Link to='https://www.linkedin.com/in/alejandrothon/' target='_blank'
-                                className='contanc__link'>
-                                <img src="src\assets\icons\LinkedIn.svg" alt="linkedin" className='contact__icon' />
-                            </Link>
+                            <Networks path='https://www.linkedin.com/in/alejandrothon/' alt='linkedin' />
+                            <Networks path='https://github.com/eternum-dev' alt='github' />
+                            <Networks path='linkedin' alt='linkedin' />
                             <Link to='https://github.com/eternum-dev' target='_blank'
                                 className='contanc__link'>
                                 <img src="src\assets\icons\GitHub.svg" alt="github" className='contact__icon' />
