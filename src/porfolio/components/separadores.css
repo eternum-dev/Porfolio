@@ -13,8 +13,8 @@
   content: "";
   left: 50%;
   z-index: 10;
-  width:clamp(300px, 100%, 410px);
-  height:clamp(300px, 100%, 410px);
+  width:clamp(200px, 100%, 300px);
+  height:clamp(200px, 100%, 300px);
   border-radius: 50%;
   background: #fff;
   transform: translateX(-50%) translateY(60%);
