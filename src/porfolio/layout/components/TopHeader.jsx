@@ -47,7 +47,6 @@ export const TopHeader = () => {
 
 
     const isSticky = () => {
-        console.log(scrollTop, window.scrollY);
         if (scrollTop < window.scrollY) {
             haderRef.current.classList.add('is-sticky');
             setScrollTop(window.scrollY);

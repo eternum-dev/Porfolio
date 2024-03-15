@@ -18,7 +18,6 @@ export const CardProyect = ({ proyect }) => {
             <div className='tec__container'>
                 {
                     proyect.tecnologias.map(tec => (
-                        // src\assets\stack-tech-icon\CSS3.svg
                         <img src={`src/assets/stack-tech-icon/${tec.name}.svg`} alt={tec.name} className='tec__img' key={tec.name} />
                     ))
                 }
