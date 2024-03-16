@@ -1,23 +1,22 @@
 .semicircle {
   position: relative;
   background: transparent;
-  height: 25vh;
-  position: relative;
+  height: clamp(85px, 25vh, 180px);
   z-index: -1;
   overflow: hidden;
   border-bottom: 1px solid white;
+  margin-bottom: 3rem;
 }
 
 .semicircle::before {
   position: absolute;
   content: "";
   left: 50%;
-  z-index: 10;
-  width:clamp(200px, 100%, 300px);
-  height:clamp(200px, 100%, 300px);
+  z-index: 2;
+  width: clamp(150px, 50vw, 300px);
+  height: clamp(150px, 50vw, 300px);
   border-radius: 50%;
   background: #fff;
   transform: translateX(-50%) translateY(60%);
   bottom: 0px;
 }
-  
