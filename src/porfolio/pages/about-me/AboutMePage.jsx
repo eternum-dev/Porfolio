@@ -15,6 +15,7 @@ export const AboutMePage = () => {
         <div
             id='about'
             ref={aboutRef}
+            style={{marginBottom:'2rem'}}
         >
             <h1> {aboutMe.title}</h1>
             <SectionAbout abouts={aboutMe.data} />

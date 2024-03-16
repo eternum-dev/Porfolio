@@ -17,7 +17,7 @@ export const ContactPage = () => {
     }
 
     return (
-        <div>
+  
             <div id='contactPage'>
                 <h1>Contact</h1>
                 <section className="contact">
@@ -27,15 +27,12 @@ export const ContactPage = () => {
                         </header>
                         <div className='contact__wrapper'>
                             <Networks path='https://www.linkedin.com/in/alejandrothon/' alt='linkedin' />
-                            <Networks path='https://github.com/eternum-dev' alt='github' />
-                            <Networks path='linkedin' alt='linkedin' />
-                            <Link to='https://github.com/eternum-dev' target='_blank'
-                                className='contanc__link'>
-                                <img src="src\assets\icons\GitHub.svg" alt="github" className='contact__icon' />
-                            </Link>
-
+                            <Networks path='https://github.com/eternum-dev' alt='github' />      
                             <Link className='contanc__link'>
                                 <img src="src\assets\icons\emaill.svg" alt="correo" className='contact__icon' />
+                            </Link>
+                            <Link className='contanc__link'>
+                                <img src="src\assets\icons\emaill.svg" alt="cv" className='contact__icon' />
                             </Link>
                         </div>
                     </article>
@@ -86,7 +83,6 @@ export const ContactPage = () => {
                     </article>
                 </section>
             </div>
-        </div>
 
     )
 }

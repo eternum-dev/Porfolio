@@ -7,6 +7,7 @@
   /* align-items: center; */
   border-radius: 1rem;
   background-color: var(--veryBlack);
+  box-shadow: rgba(0, 0, 0, 0.24) 5px 12px 10px;
 }
 
 .cardSkill__title {
@@ -19,7 +20,7 @@
 .cardSkill__img {
   width: clamp(60px, 100%, 100px);
   object-fit: cover;
-  transition:  all 200ms;
+  transition: all 200ms;
   margin: 0 auto;
 }
 .cardSkill:hover .cardSkill__img {

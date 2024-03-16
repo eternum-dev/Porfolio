@@ -20,7 +20,7 @@
   flex-direction: column;
   height: 100%;
   align-self: start;
-
+  box-shadow: rgba(0, 0, 0, 0.24) 5px 12px 10px;
 }
 /* .home__card header {
   margin-bottom: 3rem;
@@ -31,6 +31,7 @@
 }
 .home__img {
   height: 100%;
+  box-shadow: rgba(0, 0, 0, 0.24) 5px 12px 10px;
 }
 
 @media (min-width: 600px) {

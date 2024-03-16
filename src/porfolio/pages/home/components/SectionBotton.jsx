@@ -22,7 +22,7 @@ export const SectionBotton = () => {
 
 
                 </article>
-                <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', padding: '1.5rem 1rem', gap: '1rem', background: '#ccc', width: 'clamp(130px, 100%, 150px)', height: 'fit-content', marginTop: 'auto', backgroundColor: 'var(--veryBlack)', border:'1px solid #ccc',  borderRadius:'5px'}}>
+                <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', padding: '2rem 3rem', gap: '4rem', background: '#ccc', width:'fit-content', height: 'fit-content', margin: 'auto auto 0 auto', backgroundColor: 'var(--veryBlack)', boxShadow: 'rgba(0, 0, 0, 0.24) 5px 12px 10px', borderRadius: '2rem' }}>
                     <Networks alt='linkedin' path='https://www.linkedin.com/in/alejandrothon/' />
                     <Networks alt='github' path='https://github.com/eternum-dev' />
                     <Networks alt='email' path='alejandro.thon.j@gmail.com' />
