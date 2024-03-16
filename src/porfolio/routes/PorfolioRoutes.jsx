@@ -14,7 +14,6 @@ export const PorfolioRoutes = () => {
           <LayoutPorfolio>
             <HomePage />
             <Separadores />
-
  
             <ProyectPage />
             <Separadores />
@@ -23,10 +22,8 @@ export const PorfolioRoutes = () => {
             <Separadores />
 
             <AboutMePage />
-            <Separadores />
 
           </LayoutPorfolio>}
-
       />
 
       <Route
