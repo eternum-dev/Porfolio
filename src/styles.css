@@ -22,7 +22,21 @@
   --tobacco-brown-950: #2d211b;
 }
 html {
-  background-image: radial-gradient(circle, #06080a, #0d0f10, #131415, #171819, #1b1c1d, #1b1c1d, #1b1c1d, #1b1c1d, #171819, #131415, #0d0f10, #06080a);
+  background-image: radial-gradient(
+    circle,
+    #06080a,
+    #0d0f10,
+    #131415,
+    #171819,
+    #1b1c1d,
+    #1b1c1d,
+    #1b1c1d,
+    #1b1c1d,
+    #171819,
+    #131415,
+    #0d0f10,
+    #06080a
+  );
   background-position: center center;
   background-attachment: fixed;
 }
@@ -37,7 +51,7 @@ html {
 body {
   scroll-behavior: smooth;
   min-width: 100vw;
-  min-height: 100%; 
+  min-height: 100%;
   overflow-x: hidden;
 }
 
@@ -84,3 +98,4 @@ button {
   background-color: inherit;
   border: 0;
 }
+

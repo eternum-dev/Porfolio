@@ -2,7 +2,7 @@ export const skills = {
     title: 'skills',
     arrStack: [
         {
-            nameCategory: 'lenguajes',
+            nameCategory: 'Pricipales',
             technology: [
                 {
                     name: 'css',
@@ -20,10 +20,14 @@ export const skills = {
                     name: 'react',
                     icon: 'src/assets/stack-tech-icon/React.svg'
                 },
+                {
+                    name: 'TypeScrip',
+                    icon: '#'
+                }
             ]
         },
         {
-            nameCategory: 'test',
+            nameCategory: 'Todas',
             technology: [
                 {
                     name: 'vitest',
@@ -35,10 +39,6 @@ export const skills = {
                 {
                     name: 'jest',
                     icon: 'src/assets/stack-tech-icon/Jest.svg'
-                },
-                {
-                    name: 'cypress',
-                    icon: 'src/assets/stack-tech-icon/Cypress.svg'
                 },
                 {
                     name: 'css',
@@ -55,7 +55,8 @@ export const skills = {
                     name: 'react',
                     icon: 'src/assets/stack-tech-icon/React.svg'
                 }
-            ]
+            ],
+            info: 'esta tecnoglogias son las que he utilizado en diversos tipos de proyectos'
         },
         {
             nameCategory: 'dev tools',
@@ -70,7 +71,25 @@ export const skills = {
                 {
                     name: 'figma',
                     icon: 'src/assets/stack-tech-icon/Figma.svg'
-                }
+                },
+                {
+                    name: 'terminal | PowerShell',
+                    icon: '#'
+                },
+                {
+                    name: 'vs code',
+                    icon: '#'
+                },
+                {
+                    name: 'postman',
+                    icon: '#'
+                }, 
+                {
+                    name: 'Google Chrome',
+                    icon: '#'
+                },
+
+
             ]
         },
     ]
