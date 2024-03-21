@@ -1,61 +1,17 @@
-import { Link, NavLink, useLocation } from 'react-router-dom';
-import { useEffect, useRef, useState } from 'react';
-import { ContactButton } from '../../components/ContactButton';
-import { useScrollNavigate } from '../../../hooks/useScrollNavigate';
+import { Link, NavLink } from 'react-router-dom';
+import { RedirectButton } from '../../components/RedirectButton';
 import './topheader.css';
-
+import { useNavBar } from '../../../hooks/useNavBar';
+import { useRef } from 'react';
+import { header } from '../../../data/layout'
 
 
 
 export const TopHeader = () => {
+    const haderRef = useRef(null);
 
-    const location = useLocation();
-
-    const [scrollTop, setScrollTop] = useState(0);
-
-    const haderRef = useRef();
-
-    const navRef = useRef();
-    const openMenuRef = useRef();
-    const closeMenuRef = useRef();
-
-    const showNav = () => {
-        navRef.current.classList.toggle('navBar');
-        openMenuRef.current.classList.toggle('disable');
-        closeMenuRef.current.classList.toggle('disable');
-    }
-
-    useScrollNavigate();
-
-    const functi = (proyects) => {
-        const hash = location.hash.slice(1);
-        if (hash === proyects) {
-            return 'isActive';
-        }
-        return '';
-    }
-
-    const proyects = 'proyect';
-
-
-    useEffect(() => {
-        window.addEventListener('scroll', isSticky);
-        return () => {
-            window.removeEventListener('scroll', isSticky);
-        };
-    });
-
-
-    const isSticky = () => {
-        if (scrollTop < window.scrollY) {
-            haderRef.current.classList.add('is-sticky');
-            setScrollTop(window.scrollY);
-        } else {
-            haderRef.current.classList.remove('is-sticky');
-            setScrollTop(window.scrollY);
-        }
-    };
-
+    const { navRef, openMenuRef, closeMenuRef,
+        showNav, isVisible } = useNavBar(haderRef);
 
 
     return (
@@ -63,7 +19,7 @@ export const TopHeader = () => {
             className='header'
             ref={haderRef}
         >
-            <Link className='header__link' to="/#home">
+            <Link className='header__link' to={`/#${header.link}`}>
                 <img src="src\assets\logo.png" alt="logo" />
             </Link>
 
@@ -72,33 +28,22 @@ export const TopHeader = () => {
                 className='header__nav'
             >
                 <div className='navbar-links'>
-                    <NavLink
-
-                        to={`/#${proyects}`}
-                        className={() => `navlink ${functi(proyects)}`}
-                    >
-                        proyect
-                    </NavLink>
-                    <NavLink
-                        to='/#skills'
-                        className={() => `navlink ${functi('skills')}`}
-                    >
-                        skills
-                    </NavLink>
-                    <NavLink
-                        to='/#about'
-                        className={() => `navlink ${functi('about')}`}
-                    >
-                        about me
-                    </NavLink>
-
-                    <div className='hr'></div>
-
-                    <ContactButton />
+                    {
+                        header.navLink.map((navLink) => (
+                            <NavLink
+                                key={navLink.name}
+                                to={`/#${navLink.to}`}
+                                className={() => `navlink ${isVisible()}`}
+                            >
+                                {navLink.name}
+                            </NavLink>
+                        ))
+                    }
                 </div>
-
             </nav>
-            <ContactButton />
+
+            <RedirectButton to={header.button} />
+
             <button onClick={showNav} className='navBar__button'>
 
                 <img src="src\assets\icons\hamburger-open.svg"

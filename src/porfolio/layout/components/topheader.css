@@ -77,7 +77,7 @@
 .disable {
   display: none;
 }
-.is-sticky {
+.isSticky {
   background-color: var(--veryBlack);
   background-color: rgba(29, 30, 31, .75);
   backdrop-filter: blur(10px);

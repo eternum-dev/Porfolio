@@ -1,35 +1,34 @@
 import { Link, NavLink } from 'react-router-dom';
 import './footer.css';
+import { footer, header } from '../../../data/layout';
+
+
+
+
 
 
 export const Footer = () => {
     return (
         <footer className='footer'>
-            <Link className='footer__link' to="/" >
+            <Link className='footer__link' to={`#${footer.link}`} >
                 <img src="src\assets\logo.png" alt="logo" />
             </Link>
             <nav className='footer__nav'>
-                <NavLink
-                    to='/proyect'
-                    className={({ isActive }) => `navlink ${isActive ? 'isActive' : ''}`}
-                >
-                    proyect
-                </NavLink>
-                <NavLink
-                    to='/about'
-                    className={({ isActive }) => `navlink ${isActive ? 'isActive' : ''}`}
-                >
-                    about
-                </NavLink>
-                <NavLink
-                    to='/skills'
-                    className={({ isActive }) => `navlink ${isActive ? 'isActive' : ''}`}
-                >
-                    skills
-                </NavLink>
+                {
+                    header.navLink.map((navlink) => (
+                        <NavLink
+                            key={navlink.name}
+                            to={`/${navlink.to}`}
+                            className={() => `navlink`}
+                        >
+                            {navlink.name}
+                        </NavLink>
+                    ))
+                }
             </nav>
             <div className='footer__social'>
                 <ul className='footer__ul'>
+                    
                     <Link to='https://www.linkedin.com/in/alejandrothon/' target='_blank'>
                         <img
                             src="src\assets\icons\LinkedIn.svg"
