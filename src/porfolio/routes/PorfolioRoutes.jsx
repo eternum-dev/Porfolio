@@ -11,7 +11,7 @@ export const PorfolioRoutes = () => {
       <Route  
         path="/"
         element={
-          <LayoutPorfolio>
+          <LayoutPorfolio >
             <HomePage />
             <Separadores />
  

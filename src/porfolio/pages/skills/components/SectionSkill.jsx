@@ -13,7 +13,6 @@ export const SectionSkill = ({ stack }) => {
                         <CardSkill technology={technology} key={technology.name}/>
                     ))
                 }
-
             </div>
 
         </section>

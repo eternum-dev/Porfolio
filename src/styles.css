@@ -21,6 +21,10 @@
   --tobacco-brown-900: #291f19;
   --tobacco-brown-950: #2d211b;
 }
+a:hover svg path{
+  stroke: var(--tobacco-brown-300);
+} 
+
 html {
   background-image: radial-gradient(
     circle,
@@ -59,17 +63,20 @@ h1 {
   font-size: 5rem;
   font-weight: 700;
   color: var(--tobacco-brown-300);
+  text-transform: capitalize;
 }
 h2 {
   font-size: 3.5rem;
   margin: 0;
   font-weight: 700;
-  color: var(--tobacco-brown-50);
+  color: var(--tobacco-brown-100);
+  text-transform: capitalize;
 }
 h3 {
   font-size: 2rem;
   font-weight: 500;
-  color: var(--tobacco-brown-50);
+  color: var(--tobacco-brown-100);
+  text-transform: capitalize;
 }
 h4,
 a,
@@ -92,6 +99,8 @@ li {
 a {
   text-decoration: none;
   width: fit-content;
+  color: var(--tobacco-brown-300);
+  text-transform: capitalize;
 }
 button {
   width: fit-content;
