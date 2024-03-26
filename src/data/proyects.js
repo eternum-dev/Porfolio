@@ -2,7 +2,7 @@ export const proyects = {
     title: 'My Proyect',
     arrProyects: [
         {
-            name: 'ip- address-tracker',
+            name: 'ip-address-tracker',
             img: 'src/assets/mocks/ip-address-tracker.png',
             description: `
             Desarrollé 'IP Address Tracker' para Frontend Mentor, una app web que utiliza APIs de geolocalización y mapas para ofrecer información detallada de IPs. Emocionado por futuras mejoras. 🌐🚀`,
@@ -16,7 +16,8 @@ export const proyects = {
                 {
                     name: 'JavaScript'
                 }
-            ]
+            ],
+            repository: 'https://github.com/eternum-dev/ip-address-tracker'
         },
         {
             name: 'age calculator',
@@ -32,7 +33,8 @@ export const proyects = {
                 {
                     name: 'JavaScript'
                 }
-            ]
+            ],
+            repository: 'https://github.com/eternum-dev/age-calculator'
         },
         {
             name: 'sherter-url',
@@ -48,7 +50,8 @@ export const proyects = {
                 {
                     name: 'JavaScript'
                 }
-            ]
+            ],
+            repository: 'https://github.com/eternum-dev/shorter-url-api'
         },
         {
             name: 'porfolio',
@@ -67,7 +70,8 @@ export const proyects = {
                 {
                     name: 'react',
                 }
-            ]
+            ],
+            repository: 'https://github.com/eternum-dev/Porfolio'
         }
     ]
 }

@@ -74,19 +74,19 @@ export const skills = {
                 },
                 {
                     name: 'terminal | PowerShell',
-                    icon: '#'
+                    icon: 'src/assets/stack-tech-icon/powershell.svg'
                 },
                 {
                     name: 'vs code',
-                    icon: '#'
+                    icon: 'src/assets/stack-tech-icon/visual-studio-code.svg'
                 },
                 {
                     name: 'postman',
-                    icon: '#'
+                    icon: 'src/assets/stack-tech-icon/postman.svg'
                 }, 
                 {
                     name: 'Google Chrome',
-                    icon: '#'
+                    icon: 'src/assets/stack-tech-icon/chrome.svg'
                 },
 
 

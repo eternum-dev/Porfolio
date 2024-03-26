@@ -5,16 +5,16 @@ export const aboutMe = {
             name: 'estudios',
             contenedor: [
                 {
-                    subTitle: 'analista Programador',
+                    subTitle: 'Analista Programador',
                     date: 'inicio de 2019 - 2021',
-                    descrription: 'Durante mi tiempo en la universidad como estudiante de Analista Programador, adquirí habilidades en HTML, CSS, JavaScript, Java y MySQL. Aunque no pude concluir la carrera, continúo mis estudios de forma autodidacta.',
+                    descrription: 'En mi etapa como estudiante en la universidad adquirí  habilidades en HTML, CSS, JavaScript, Java y MySQL.',
                     centro: 'inacap',
                     img: '#'
                 },
                 {
                     subTitle: 'React de 0 a experto',
                     date: 'marzo 2023 - julio 2023',
-                    descrription: 'Este curso te lleva de cero a un nivel competitivo en React, utilizando  Hooks y componentes funcionales. Incluye secciones de pruebas unitarias e integración para componentes, hooks y más.',
+                    descrription: 'Este curso te llevó a un nivel competitivo en React, utilizando  Hooks y componentes funcionales. Incluye secciones de pruebas unitarias e integración para componentes, hooks y más.',
                     centro: 'udemy',
                     img: '#'
                 },
@@ -31,18 +31,18 @@ export const aboutMe = {
             name: 'personal',
             contenedor: [
                 {
-                    subTitle: 'basket',
+                    subTitle: 'Basquetball',
                     descrription: 'soy un apacionado por el deporte yuno de mis favoritos es el basketball',
                     img: '#'
                 },
                 {
-                    subTitle: 'anime, series y documentales',
-                    descrription: 'desde que tengo recuerdos el contenido multimedia ha sido parte de mi vida, mis tiempos libres son de lo que mas hago.',
+                    subTitle: 'Contenido Multimedia',
+                    descrription: 'Desde que tengo recuerdosel anime, peliculas, series, y documentales han sido parte de mi vida, en  mis tiempos libres es de hoobies que mas practico',
                     img: '#'
                 },
                 {
-                    subTitle: 'juegos',
-                    descrription: 'otro de mis grandes hobbies es jugar, tanto en el pc como en consolas, lo hago desde que tengo uso de razón',
+                    subTitle: 'Juegos',
+                    descrription: 'otra de mis grandes paciones es jugar, tanto en el pc como en consolas, lo hago desde pequeño cuando en casa teniamos nuestra primera nintengo.',
                     img: '#'
                 }
             ]
