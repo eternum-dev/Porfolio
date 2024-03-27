@@ -4,4 +4,6 @@
   grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
   padding: 2.5rem 0;
   height: fit-content;
+  background-color: rgba(29, 30, 31, 0.163);
+  backdrop-filter: blur(100px);
 }

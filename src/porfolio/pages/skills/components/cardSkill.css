@@ -20,10 +20,11 @@
 .cardSkill__img {
   width: clamp(60px, 100%, 100px);
   object-fit: cover;
-  transition: all 200ms;
+  transition: all ease-in 200ms;
   margin: 0 auto;
+
 }
 .cardSkill:hover .cardSkill__img {
-  transform: scale(1.1);
-  filter: blur(2px);
+  transform: scale(1.2);
+  filter: drop-shadow(0px 0px 8px #d7cfb2 );
 }

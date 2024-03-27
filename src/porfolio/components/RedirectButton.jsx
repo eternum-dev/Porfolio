@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import './redirectButton.css';
 
 export const RedirectButton = ({ to }) => {
-    console.log(to);
     return (
         <>
             <NavLink

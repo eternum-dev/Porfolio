@@ -31,8 +31,8 @@
   grid-template-columns: repeat(auto-fit, minmax(15px, 1fr));
   align-items: center;
   justify-items: center;
-  gap: 3rem;
-  margin: 3rem 0;
+  gap: 2rem;
+  margin: 1rem 0;
   height: 100%;
 }
 .contact__button{

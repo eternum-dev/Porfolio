@@ -21,9 +21,15 @@
   --tobacco-brown-900: #291f19;
   --tobacco-brown-950: #2d211b;
 }
-a:hover svg path{
+a svg{
+  transition: all 200ms;
+}
+a:hover svg  {
+  filter: drop-shadow(0px 0px 16px #d7cfb2);
+}
+a:hover svg path {
   stroke: var(--tobacco-brown-300);
-} 
+}
 
 html {
   background-image: radial-gradient(
@@ -107,4 +113,3 @@ button {
   background-color: inherit;
   border: 0;
 }
-
