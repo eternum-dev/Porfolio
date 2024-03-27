@@ -1,19 +1,20 @@
-import { Link, NavLink } from 'react-router-dom';
-import { RedirectButton } from '../../components/RedirectButton';
-import './topheader.css';
-import { useNavBar } from '../../../hooks/useNavBar';
 import { useRef } from 'react';
+import { Link, NavLink, useLocation } from 'react-router-dom';
+import { RedirectButton } from '../../components/RedirectButton';
+import { useNavBar } from '../../../hooks/useNavBar';
 import { header } from '../../../data/layout'
-
+import './topheader.css';
 
 
 export const TopHeader = () => {
     const haderRef = useRef(null);
 
+    const location = useLocation();
+
     const { navRef, openMenuRef, closeMenuRef,
         showNav, isVisible } = useNavBar(haderRef);
 
-
+    const isContact = location.pathname.slice(1) === header.button
     return (
         <header
             className='header'
@@ -41,8 +42,10 @@ export const TopHeader = () => {
                     }
                 </div>
             </nav>
+            {
+                !isContact && <RedirectButton to={header.button} />
+            }
 
-            <RedirectButton to={header.button} />
 
             <button onClick={showNav} className='navBar__button'>
 
