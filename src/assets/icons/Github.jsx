@@ -1,11 +1,12 @@
+import PropTypes from 'prop-types';
 
+export const Github = ({ size = '32' }) => {
 
-function Github() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="32"
-      height="32"
+      width={size}
+      height={size}
       fill="none"
       strokeWidth="1.5"
       color="#856b47"
@@ -28,3 +29,7 @@ function Github() {
 }
 
 export default Github;
+
+Github.propTypes = {
+  size: PropTypes.string
+}

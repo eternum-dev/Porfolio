@@ -1,10 +1,13 @@
+import PropTypes from 'prop-types';
 
-function Email() {
+
+export const Email = ({ size = '32' }) => {
+
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="32"
-            height="32"
+            width={size}
+            height={size}
             fill="none"
             strokeWidth="1.5"
             color="#856b47"
@@ -32,3 +35,7 @@ function Email() {
 }
 
 export default Email;
+
+Email.propTypes = {
+    size: PropTypes.string
+}
