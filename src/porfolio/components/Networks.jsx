@@ -2,13 +2,14 @@ import { Link } from "react-router-dom"
 import PropTypes from 'prop-types';
 
 
-export const Networks = ({ alt, path = null, classname = '' }) => {
+export const Networks = ({ path = null, classname = '', name = '', children }) => {
     return (
-        <div>
-            <Link to={path} className={classname}  target='_blank' >
-                <img src={`src/assets/icons/${alt}.svg`} alt={alt} className='contact__icon' />
+        <>
+            <Link to={path} className={classname} target='_blank' style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }} >
+                {name && <span style={{ textTransform: 'capitalize', margin: '.5rem,' }}> {name} </span>}
+                {children}
             </Link>
-        </div>
+        </>
     )
 }
 
@@ -17,5 +18,7 @@ export const Networks = ({ alt, path = null, classname = '' }) => {
 Networks.propTypes = {
     alt: PropTypes.string.isRequired,
     path: PropTypes.string.isRequired,
-    classname: PropTypes.any
+    classname: PropTypes.any,
+    name: PropTypes.string,
+    children: PropTypes.any
 }
