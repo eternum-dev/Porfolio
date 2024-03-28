@@ -21,8 +21,8 @@ export const skills = {
                     icon: 'src/assets/stack-tech-icon/React.svg'
                 },
                 {
-                    name: 'TypeScrip',
-                    icon: '#'
+                    name: 'TypeScript',
+                    icon: 'src/assets/stack-tech-icon/TypeScript.svg'
                 }
             ]
         },
@@ -41,19 +41,8 @@ export const skills = {
                     icon: 'src/assets/stack-tech-icon/Jest.svg'
                 },
                 {
-                    name: 'css',
-                    icon: 'src/assets/stack-tech-icon/CSS3.svg'
-                }, {
-                    name: 'js',
-                    icon: 'src/assets/stack-tech-icon/JavaScript.svg'
-                },
-                {
-                    name: 'html',
-                    icon: 'src/assets/stack-tech-icon/HTML5.svg'
-                },
-                {
-                    name: 'react',
-                    icon: 'src/assets/stack-tech-icon/React.svg'
+                    name: 'formik',
+                    icon: 'src/assets/stack-tech-icon/Formik.svg'
                 }
             ],
             info: 'esta tecnoglogias son las que he utilizado en diversos tipos de proyectos'
@@ -66,7 +55,7 @@ export const skills = {
                     icon: 'src/assets/stack-tech-icon/Git.svg'
                 }, {
                     name: 'github',
-                    icon: 'src/assets/icons/GitHub.svg'
+                    icon: 'src/assets/stack-tech-icon/github.svg'
                 },
                 {
                     name: 'figma',
