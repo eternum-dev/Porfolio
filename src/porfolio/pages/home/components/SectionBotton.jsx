@@ -1,3 +1,6 @@
+import Github from '../../../../assets/icons/Github';
+import Linkedin from '../../../../assets/icons/Linkedin';
+import Email from '../../../../assets/icons/email';
 import { botPage } from '../../../../data/home';
 import { Networks } from '../../../components/Networks';
 import './sectionBotton.css';
@@ -20,12 +23,18 @@ export const SectionBotton = () => {
                         ))
                     }
 
-
                 </article>
-                <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', padding: '2rem 3rem', gap: '4rem', background: '#ccc', width:'fit-content', height: 'fit-content', margin: 'auto auto 0 auto', backgroundColor: 'var(--veryBlack)', boxShadow: 'rgba(0, 0, 0, 0.24) 5px 12px 10px', borderRadius: '2rem' }}>
-                    <Networks alt='linkedin' path='https://www.linkedin.com/in/alejandrothon/' />
-                    <Networks alt='github' path='https://github.com/eternum-dev' />
-                    <Networks alt='email' path='alejandro.thon.j@gmail.com' />
+                <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', padding: '2rem 3rem', gap: '4rem', background: '#ccc', width: 'fit-content', height: 'fit-content', margin: 'auto auto 0 auto', backgroundColor: 'var(--veryBlack)', boxShadow: 'rgba(0, 0, 0, 0.24) 5px 12px 10px', borderRadius: '2rem' }}>
+                    <Networks alt='linkedin' path='https://www.linkedin.com/in/alejandrothon/' >
+                        <Linkedin />
+                    </Networks>
+                    <Networks alt='github' path='https://github.com/eternum-dev'>
+                        <Github className='link-hover' />
+                    </Networks>
+                    <Networks alt='email' path='alejandro.thon.j@gmail.com'>
+                        <Email />
+                    </Networks>
+
                 </div>
             </div>
         </section>

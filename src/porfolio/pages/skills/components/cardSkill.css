@@ -25,6 +25,6 @@
 
 }
 .cardSkill:hover .cardSkill__img {
-  transform: scale(1.2);
-  filter: drop-shadow(0px 0px 8px #d7cfb2 );
+  transform: scale(1.1);
+  filter: drop-shadow(0px 0px 4px #d7cfb2 );
 }

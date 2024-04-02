@@ -1,7 +1,9 @@
 import { Link, NavLink } from 'react-router-dom';
-import './footer.css';
 import { footer, header } from '../../../data/layout';
-
+import './footer.css';
+import { Networks } from '../../components/Networks';
+import Linkedin from '../../../assets/icons/Linkedin';
+import Github from '../../../assets/icons/Github';
 
 
 
@@ -10,7 +12,10 @@ import { footer, header } from '../../../data/layout';
 export const Footer = () => {
     return (
         <footer className='footer'>
-            <Link className='footer__link' to={`#${footer.link}`} >
+            <Link
+                className='footer__link'
+                to={`#${footer.link}`}
+            >
                 <img src="src\assets\logo.png" alt="logo" />
             </Link>
             <nav className='footer__nav'>
@@ -28,21 +33,12 @@ export const Footer = () => {
             </nav>
             <div className='footer__social'>
                 <ul className='footer__ul'>
-                    
-                    <Link to='https://www.linkedin.com/in/alejandrothon/' target='_blank'>
-                        <img
-                            src="src\assets\icons\LinkedIn.svg"
-                            alt="linkedin"
-                            className='footer__icon'
-                        />
-                    </Link>
-                    <Link to='https://github.com/eternum-dev' target='_blank'>
-                        <img
-                            src="src\assets\icons\GitHub.svg"
-                            alt="gitHub"
-                            className='footer__icon'
-                        />
-                    </Link>
+                    <Networks alt='linkedin' path='https://www.linkedin.com/in/alejandrothon/' >
+                        <Linkedin />
+                    </Networks>
+                    <Networks alt='github' path='https://github.com/eternum-dev'>
+                        <Github className='link-hover' />
+                    </Networks>
                 </ul>
             </div>
         </footer>
