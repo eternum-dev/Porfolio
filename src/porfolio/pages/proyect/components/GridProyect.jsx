@@ -1,8 +1,9 @@
 import { useState } from 'react';
-import { CardProyect } from './CardProyect';
+// import { CardProyect } from './CardProyect';
 import './gridProyect.css';
 
 import PropTypes from 'prop-types';
+import { Card } from '../../../components/Card';
 
 
 let i = 0;
@@ -18,7 +19,7 @@ export const GridProyect = ({ allProyect }) => {
             <section className="proyect__grid">
                 {
                     allProyect.map(proyect => (
-                        <CardProyect key={i++} proyect={proyect} />
+                        <Card key={i++} data={proyect} />
                     ))
                 }
             </section>
@@ -27,7 +28,7 @@ export const GridProyect = ({ allProyect }) => {
             <div>
                 <button
                     onClick={() => setIsVisible(prev => !prev)}
-                    style={{padding:'1rem 1.5rem', borderRadius:'.4rem', border:'1px solid #ccc', width:'100px'}}
+                    style={{ padding: '1rem 1.5rem', borderRadius: '.4rem', border: '1px solid #ccc', width: '100px' }}
                 >
                     {!isVisible ? 'abrir' : 'cerrar'}
                 </button>
@@ -35,7 +36,7 @@ export const GridProyect = ({ allProyect }) => {
                     {
                         isVisible && (
                             allProyect.map(proyect => (
-                                <CardProyect key={i++} proyect={proyect} />
+                                <Card key={i++} data={proyect} />
                             ))
                         )
                     }
