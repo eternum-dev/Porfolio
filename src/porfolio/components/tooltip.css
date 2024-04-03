@@ -1,0 +1,34 @@
+.tooltip {
+  display: grid;
+  position: relative;
+  width: 100%;
+  
+}
+
+.tooltip__text {
+  width:150px;
+  font-size: 1.2rem;
+  padding:  .3rem;
+  border-radius: 1rem;
+  background: #ccc;
+  color: var(--black);
+  border: 1px solid var(--black);
+  position: absolute;
+  top: -2rem;
+  margin: 0 auto;
+  justify-self: center;
+  text-align: center;
+  visibility: hidden;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 200ms;
+}
+.tooltip:hover .tooltip__text {
+    visibility: initial;
+}
+.tooltip header {
+    overflow: hidden;
+}
+@media (min-width: 765px) {
+    .tooltip__text { 
+        top: -4rem;
+    }
+}
