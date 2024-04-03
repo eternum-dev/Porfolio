@@ -10,7 +10,15 @@ import { Tooltip } from '../../../components/Tooltip';
 export const SectionBotton = () => {
     return (
         <section className='home__section-bot'>
-            <img src="src\assets\perfil-porfolio.png" alt="yo" className='home__img' />
+            <div className='home__wrapper-img'>
+                <img
+                    src="src\assets\perfil-porfolio.png"
+                    alt="yo"
+                    className='home__img'
+                />
+                <img src="src/assets/podium.svg" alt="podium"  className='svg'/>
+            </div>
+
             <div style={{ display: 'grid', gap: '2rem' }}>
                 <article className="home__card">
                     <header>
@@ -34,7 +42,7 @@ export const SectionBotton = () => {
                     </Networks>
                     <Networks alt='email' path='alejandro.thon.j@gmail.com'>
                         <Tooltip title="Copiar correo">
-                            <Email/>
+                            <Email />
                         </Tooltip>
 
                     </Networks>
