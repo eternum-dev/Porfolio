@@ -1,10 +1,10 @@
-import { CardAbout } from './CardAbout';
+import { Card } from '../../../components/Card';
 import './sectionAbout.css';
 import PropTypes from 'prop-types';
 
 
 export const SectionAbout = ({ abouts }) => {
-  
+
     return (
         <div className='about'>
             {
@@ -14,7 +14,12 @@ export const SectionAbout = ({ abouts }) => {
                         <div className="about__grid-container">
                             {
                                 about.contenedor.map(data => (
-                                    <CardAbout data={data} key={data.subTitle} />
+                                    <Card data={data} key={data.name} >
+                                        {
+                                            data.centro &&
+                                            <p style={{ marginTop: '1rem', color: 'var(--tobacco-brown-200)' }}> Centro de estudio: {data.centro}</p>
+                                        }
+                                    </Card>
                                 ))
                             }
 
