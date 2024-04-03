@@ -4,6 +4,7 @@ import './gridProyect.css';
 
 import PropTypes from 'prop-types';
 import { Card } from '../../../components/Card';
+import { Link } from 'react-router-dom';
 
 
 let i = 0;
@@ -19,29 +20,38 @@ export const GridProyect = ({ allProyect }) => {
             <section className="proyect__grid">
                 {
                     allProyect.map(proyect => (
-                        <Card key={i++} data={proyect} />
+                        <Card
+                            key={i++}
+                            data={proyect}
+                            isHover={true} />
                     ))
                 }
             </section>
 
             <h2>Practicas, ejercicios, otros</h2>
-            <div>
+            <div className='proyect__option'>
                 <button
+                    className='proyect__btn'
                     onClick={() => setIsVisible(prev => !prev)}
-                    style={{ padding: '1rem 1.5rem', borderRadius: '.4rem', border: '1px solid #ccc', width: '100px' }}
                 >
                     {!isVisible ? 'abrir' : 'cerrar'}
                 </button>
-                <div className="proyect__grid">
+                <div className="proyect__grid"
+                    style={{ display: !isVisible && 'none' }}
+                >
                     {
                         isVisible && (
                             allProyect.map(proyect => (
-                                <Card key={i++} data={proyect} />
+                                <Link key={proyect.repository} >
+                                    <Card
+                                        data={proyect}
+                                        isHover={true} />
+                                </Link>
+
                             ))
                         )
                     }
                 </div>
-
             </div>
         </>
 

@@ -4,6 +4,15 @@
   grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
   padding: 2.5rem 0;
   height: fit-content;
-  background-color: rgba(29, 30, 31, 0.163);
-  backdrop-filter: blur(100px);
+}
+
+.proyect__option {
+  display: grid;
+}
+.proyect__btn {
+  justify-self: center;
+  padding: 1rem 1.5rem;
+  border-radius: 0.4rem;
+  border: 1px solid #ccc;
+  width: 100px;
 }
