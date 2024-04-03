@@ -3,10 +3,10 @@ import './card.css';
 
 
 
-export const Card = ({ data, children }) => {
+export const Card = ({ data, children, isHover = false }) => {
 
     return (
-        <article className='cardProyect' >
+        <article className={`cardProyect ${isHover && 'ishover'}`}  >
             <img src={data.img} alt={data.name} className="proyect__img" />
 
             <div className='cardProyect__info'>
@@ -58,5 +58,6 @@ Card.propTypes = {
         ),
         repository: PropTypes.string
     }).isRequired,
-    children: PropTypes.object
+    children: PropTypes.object,
+    isHover: PropTypes.bool
 };
