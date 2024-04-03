@@ -15,8 +15,8 @@
 }
 .proyect__img {
   width: calc(100% + 4rem);
-  max-height: 250px;
-  object-fit: cover;
+  height: 250px;
+  object-fit: fill;
   position: relative;
   border-radius: 1rem 1rem 0 0;
   top: -2rem;

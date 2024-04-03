@@ -1,46 +1,45 @@
 import PropTypes from 'prop-types';
 import './card.css';
-import { Link } from 'react-router-dom';
 
 
 
-export const Card = ({ data }) => {
+export const Card = ({ data, children }) => {
 
     return (
-        <Link to={data.repository} >
-            <article className='cardProyect' >
-                <img src={data.img} alt={data.name} className="proyect__img" />
+        <article className='cardProyect' >
+            <img src={data.img} alt={data.name} className="proyect__img" />
 
-                <div className='cardProyect__info'>
-                    <header className='cardProyect__header'>
-                        <h3>{data.name}</h3>
-                    </header>
+            <div className='cardProyect__info'>
+                <header className='cardProyect__header'>
+                    <h3>{data.name}</h3>
+                </header>
+                {
+                    data.description &&
+                    <p className="proyect__description" >
+                        {data.description}
+                    </p>
+                }
+            </div>
+
+            {
+                data.tecnologias &&
+                <div className='tec__container'>
                     {
-                        data.description &&
-                        <p className="proyect__description" >
-                            {data.description}
-                        </p>
+                        data.tecnologias &&
+                        data.tecnologias.map(tec => (
+                            <img src={`src/assets/stack-tech-icon/${tec.name}.svg`}
+                                alt={tec.name}
+                                className='tec__img'
+                                key={tec.name}
+                            />
+                        ))
                     }
                 </div>
-
-                {
-                    data.tecnologias &&
-                    <div className='tec__container'>
-                        {
-                            data.tecnologias &&
-                            data.tecnologias.map(tec => (
-                                <img src={`src/assets/stack-tech-icon/${tec.name}.svg`}
-                                    alt={tec.name}
-                                    className='tec__img'
-                                    key={tec.name}
-                                />
-                            ))
-                        }
-                    </div>
-                }
-            </article>
-        </Link>
-
+            }
+            {
+                children
+            }
+        </article>
     )
 }
 
@@ -57,6 +56,7 @@ Card.propTypes = {
                 name: PropTypes.string.isRequired
             })
         ),
-        repository: PropTypes.string.isRequired
+        repository: PropTypes.string
     }).isRequired,
+    children: PropTypes.object
 };
