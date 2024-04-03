@@ -15,6 +15,7 @@ export const TopHeader = () => {
         showNav, isVisible } = useNavBar(haderRef);
 
     const isContact = location.pathname.slice(1) === header.button
+    
     return (
         <header
             className='header'

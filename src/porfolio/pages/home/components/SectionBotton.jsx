@@ -1,15 +1,16 @@
 import Github from '../../../../assets/icons/Github';
 import Linkedin from '../../../../assets/icons/Linkedin';
-import Email from '../../../../assets/icons/email';
+import { Email } from '../../../../assets/icons';
 import { botPage } from '../../../../data/home';
 import { Networks } from '../../../components/Networks';
 import './sectionBotton.css';
+import { Tooltip } from '../../../components/Tooltip';
 
 
 export const SectionBotton = () => {
     return (
         <section className='home__section-bot'>
-            <img src="src\assets\yo.jpg" alt="yo" className='home__img' />
+            <img src="src\assets\perfil-porfolio.png" alt="yo" className='home__img' />
             <div style={{ display: 'grid', gap: '2rem' }}>
                 <article className="home__card">
                     <header>
@@ -32,7 +33,10 @@ export const SectionBotton = () => {
                         <Github className='link-hover' />
                     </Networks>
                     <Networks alt='email' path='alejandro.thon.j@gmail.com'>
-                        <Email />
+                        <Tooltip title="Copiar correo">
+                            <Email/>
+                        </Tooltip>
+
                     </Networks>
 
                 </div>

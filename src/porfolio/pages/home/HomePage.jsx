@@ -7,6 +7,7 @@ import './homePage.css';
 
 export const HomePage = () => {
     const homeRef = useRef();
+
     useIntersectionUrlUpdater(homeRef);
 
     return (

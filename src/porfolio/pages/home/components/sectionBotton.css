@@ -3,12 +3,15 @@
   display: grid;
   justify-items: center;
   gap: 2rem;
+
 }
 
 .home__img {
-  width: clamp(10rem, 100%, 50rem);
+  max-width: 100%;
+  max-height: 400px;
+  filter: drop-shadow(rgba(255, 255, 255, 0.24) 5px 12px 10px);
   object-fit: cover;
-  border-radius: 1rem;
+  position: relative;
 }
 
 .home__card {
@@ -28,10 +31,7 @@
   margin-top: auto;
 }
 
-.home__img {
-  height: 100%;
-  box-shadow: rgba(0, 0, 0, 0.24) 5px 12px 10px;
-}
+
 
 @media (min-width: 600px) {
   .home__section-bot {
