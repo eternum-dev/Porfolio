@@ -5,25 +5,32 @@ export const aboutMe = {
             name: 'estudios',
             contenedor: [
                 {
-                    subTitle: 'Analista Programador',
+                    name: '"Analista Programador"',
                     date: 'inicio de 2019 - 2021',
-                    descrription: 'En mi etapa como estudiante en la universidad adquirí  habilidades en HTML, CSS, JavaScript, Java y MySQL.',
+                    description: 'En mi etapa como estudiante en la universidad adquirí  habilidades en HTML, CSS, JavaScript, Java y MySQL.',
                     centro: 'inacap',
-                    img: '#'
+                    img: 'src/assets/images/inacap.jpg'
                 },
                 {
-                    subTitle: 'React de 0 a experto',
+                    name: '"React desde cero a experto"',
                     date: 'marzo 2023 - julio 2023',
-                    descrription: 'Este curso te llevó a un nivel competitivo en React, utilizando  Hooks y componentes funcionales. Incluye secciones de pruebas unitarias e integración para componentes, hooks y más.',
+                    description: 'Este curso te llevó a un nivel competitivo en React, utilizando  Hooks y componentes funcionales. Incluye secciones de pruebas unitarias e integración para componentes, hooks y más.',
                     centro: 'udemy',
-                    img: '#'
+                    img: 'src/assets/images/react.jpg'
                 },
                 {
-                    subTitle: 'javaScript Moderno',
+                    name: '"javaScript Moderno"',
                     date: 'agosto 2023 - ocubre 2023',
-                    descrription: 'Estudié un curso de JavaScript moderno para fortalecer mis habilidades en desarrollo web, mejorar mis bases y mantenerme al día con las últimas tendencias tecnológicas',
+                    description: 'Estudié un curso de JavaScript moderno para fortalecer mis habilidades en desarrollo web, mejorar mis bases y mantenerme al día con las últimas tendencias tecnológicas',
                     centro: 'DevTalles',
-                    img: '#'
+                    img: 'src/assets/images/javascript.jpg'
+                },
+                {
+                    name: '"TypeScript: Tu guía completa y manual de mano"',
+                    date: 'Diciembre 2023 - Febrero 2023',
+                    description: 'Me sumergí en el mundo de TypeScript, mejorando mi comprensión sobre el tipado, funciones y variables. Conceptos que queria aprender para luego aplicarlo a React',
+                    centro: 'DevTalles',
+                    img: 'src/assets/images/typescript.jpg'
                 }
             ]
         },
@@ -31,19 +38,19 @@ export const aboutMe = {
             name: 'personal',
             contenedor: [
                 {
-                    subTitle: 'Basquetball',
-                    descrription: 'soy un apacionado por el deporte yuno de mis favoritos es el basketball',
-                    img: '#'
+                    name: 'Basquetball',
+                    description: 'soy un apacionado por el deporte yuno de mis favoritos es el basketball',
+                    img: 'src/assets/images/baloncesto.jpg'
                 },
                 {
-                    subTitle: 'Contenido Multimedia',
-                    descrription: 'Desde que tengo recuerdosel anime, peliculas, series, y documentales han sido parte de mi vida, en  mis tiempos libres es de hoobies que mas practico',
-                    img: '#'
+                    name: 'Contenido Multimedia',
+                    description: 'Desde que tengo recuerdosel anime, peliculas, series, y documentales han sido parte de mi vida, en  mis tiempos libres es de hoobies que mas practico',
+                    img: 'src/assets/images/multimedia.jpg'
                 },
                 {
-                    subTitle: 'Juegos',
-                    descrription: 'otra de mis grandes paciones es jugar, tanto en el pc como en consolas, lo hago desde pequeño cuando en casa teniamos nuestra primera nintengo.',
-                    img: '#'
+                    name: 'Juegos',
+                    description: 'otra de mis grandes paciones es jugar, tanto en el pc como en consolas, lo hago desde pequeño cuando en casa teniamos nuestra primera nintengo.',
+                    img:'src/assets/images/games.jpg'
                 }
             ]
         }
