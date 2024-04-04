@@ -23,7 +23,7 @@ export const GridProyect = ({ allProyect }) => {
                         <Card
                             key={i++}
                             data={proyect}
-                            isHover={true} />
+                            isLinked={true} />
                     ))
                 }
             </section>
@@ -45,7 +45,7 @@ export const GridProyect = ({ allProyect }) => {
                                 <Link key={proyect.repository} >
                                     <Card
                                         data={proyect}
-                                        isHover={true} />
+                                        isLinked={true} />
                                 </Link>
 
                             ))
