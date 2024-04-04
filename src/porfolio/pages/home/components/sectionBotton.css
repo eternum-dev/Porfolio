@@ -22,10 +22,9 @@
   z-index: 1;
   justify-self: center;
   align-self: center;
-  mask-image: linear-gradient(
-    var(--white) 90%,
-    transparent
-  );
+  mask-image: linear-gradient(black 95%, transparent);
+  animation: up-down-infiniti  linear infinite 3s;
+  
 }
 .svg {
   position: absolute;
@@ -62,5 +61,17 @@
 @media (min-width: 600px) {
   .home__section-bot {
     gap: 4rem;
+  }
+}
+
+@keyframes up-down-infiniti {
+  0% {
+    transform: translateY(5px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(5px);
   }
 }

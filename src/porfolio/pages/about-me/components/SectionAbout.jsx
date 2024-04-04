@@ -17,7 +17,10 @@ export const SectionAbout = ({ abouts }) => {
                                     <Card data={data} key={data.name} >
                                         {
                                             data.centro &&
-                                            <p style={{ marginTop: '1rem', color: 'var(--tobacco-brown-200)' }}> Centro de estudio: {data.centro}</p>
+                                            <p style={{ marginTop: '1rem', color: 'var(--tobacco-brown-200)' }}> Centro de estudio: 
+                                                <span style={{ color: 'var(--tobacco-brown-400)', textTransform:'capitalize', marginLeft:'.5rem'}}>
+                                                    { data.centro }
+                                                </span> </p>
                                         }
                                     </Card>
                                 ))

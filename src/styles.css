@@ -85,7 +85,9 @@ h2 {
   font-weight: 700;
   color: var(--tobacco-brown-100);
   text-transform: capitalize;
+  width: fit-content;
 }
+
 h3 {
   font-size: 2rem;
   font-weight: 500;
