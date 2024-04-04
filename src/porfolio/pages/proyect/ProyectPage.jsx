@@ -1,7 +1,7 @@
 import { useRef } from 'react';
 import { GridProyect } from './components/GridProyect';
 import { useIntersectionUrlUpdater } from '../../../hooks/useIntersectionUrlUpdater';
-import { proyects } from '../../../data/proyects';
+import { projects } from '../../../data/projects';
 import './proyectPage.css';
 
 
@@ -15,8 +15,8 @@ export const ProyectPage = () => {
             id='proyect'
             ref={proyectRef}
         >
-            <h1 className="proyect__title">{proyects.title}</h1>
-            <GridProyect allProyect={proyects.arrProyects} />
+            <h1 className="proyect__title">{projects.title}</h1>
+            <GridProyect allProyect={projects.arrProjects} />
         </div>
     )
 }
