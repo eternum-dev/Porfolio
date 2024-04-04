@@ -1,45 +1,44 @@
-
-
 export const header = {
-    link: 'home',
+    link: 'inicio',
     navLink: [
         {
-            to: 'proyect',
-            name: 'Proyect'
+            to: 'proyecto',
+            name: 'Proyecto'
         },
         {
-            to: 'skills',
-            name: 'Skills'
+            to: 'habilidades',
+            name: 'Habilidades'
         },
         {
-            to: 'about',
-            name: 'About Me'
+            to: 'sobre-mi',
+            name: 'Sobre mí'
         }],
-    button: 'contact'
+    button: 'contacto'
 }
+
 export const footer = {
-    link: 'home',
+    link: 'inicio',
     navLink: [
         {
-            to: 'proyect',
-            name: 'Proyect'
+            to: 'proyecto',
+            name: 'Proyecto'
         },
         {
-            to: 'skills',
-            name: 'Skills'
+            to: 'habilidades',
+            name: 'Habilidades'
         },
         {
-            to: 'about',
-            name: 'About Me'
+            to: 'sobre-mi',
+            name: 'Sobre mí'
         }],
     network: [{
-        src: ' src/assets/icons/GitHub.svg',
+        src: 'src/assets/icons/GitHub.svg',
         name: 'GitHub',
         to: 'github'
     },
     {
         src: 'src/assets/icons/LinkedIn.svg',
-        name: 'Linkedin',
-        to: ' linkedin'
-    },]
+        name: 'LinkedIn',
+        to: 'linkedin'
+    }]
 }

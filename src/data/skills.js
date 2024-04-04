@@ -1,23 +1,23 @@
 export const skills = {
-    title: 'skills',
+    title: 'Habilidades',
     arrStack: [
         {
-            nameCategory: 'Pricipales',
+            nameCategory: 'Principales',
             technology: [
                 {
-                    name: 'css',
+                    name: 'CSS',
                     icon: 'src/assets/stack-tech-icon/CSS3.svg'
                 },
                 {
-                    name: 'js',
+                    name: 'JavaScript',
                     icon: 'src/assets/stack-tech-icon/JavaScript.svg'
                 },
                 {
-                    name: 'html',
+                    name: 'HTML',
                     icon: 'src/assets/stack-tech-icon/HTML5.svg'
                 },
                 {
-                    name: 'react',
+                    name: 'React',
                     icon: 'src/assets/stack-tech-icon/React.svg'
                 },
                 {
@@ -30,55 +30,53 @@ export const skills = {
             nameCategory: 'Todas',
             technology: [
                 {
-                    name: 'vitest',
+                    name: 'Vitest',
                     icon: 'src/assets/stack-tech-icon/vitest.svg'
                 }, {
-                    name: 'react testing library',
+                    name: 'React Testing Library',
                     icon: 'src/assets/stack-tech-icon/testing-library.svg'
                 },
                 {
-                    name: 'jest',
+                    name: 'Jest',
                     icon: 'src/assets/stack-tech-icon/Jest.svg'
                 },
                 {
-                    name: 'formik',
+                    name: 'Formik',
                     icon: 'src/assets/stack-tech-icon/Formik.svg'
                 }
             ],
-            info: 'esta tecnoglogias son las que he utilizado en diversos tipos de proyectos'
+            info: 'Estas tecnologías son las que he utilizado en diversos tipos de proyectos.'
         },
         {
-            nameCategory: 'dev tools',
+            nameCategory: 'Herramientas de Desarrollo',
             technology: [
                 {
-                    name: 'git',
+                    name: 'Git',
                     icon: 'src/assets/stack-tech-icon/Git.svg'
                 }, {
-                    name: 'github',
+                    name: 'GitHub',
                     icon: 'src/assets/stack-tech-icon/github.svg'
                 },
                 {
-                    name: 'figma',
+                    name: 'Figma',
                     icon: 'src/assets/stack-tech-icon/Figma.svg'
                 },
                 {
-                    name: 'terminal | PowerShell',
+                    name: 'Terminal | PowerShell',
                     icon: 'src/assets/stack-tech-icon/powershell.svg'
                 },
                 {
-                    name: 'vs code',
+                    name: 'Visual Studio Code',
                     icon: 'src/assets/stack-tech-icon/visual-studio-code.svg'
                 },
                 {
-                    name: 'postman',
+                    name: 'Postman',
                     icon: 'src/assets/stack-tech-icon/postman.svg'
                 }, 
                 {
                     name: 'Google Chrome',
                     icon: 'src/assets/stack-tech-icon/chrome.svg'
-                },
-
-
+                }
             ]
         },
     ]
