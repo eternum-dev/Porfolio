@@ -10,9 +10,9 @@
   background-color: var(--veryBlack);
   box-shadow: rgba(0, 0, 0, 0.24) 5px 12px 10px;
   position: sticky;
-  top: 0;
-  z-index: 10;
-  scroll-margin-top: 100px;
+  top: 0px;
+  z-index: 10;  
+  transition: backdrop-filter  0.4s ease;
 }
 .header__link {
   grid-area: logo;
@@ -35,11 +35,13 @@
   height: clamp(10rem, 50vh, 25rem);
   z-index: 2;
   animation: animeNav 0.5s ease 0s 1 normal none;
-  transition: all 500ms ;
+  transition: all 500ms;
+  background: var(--veryBlack);
 }
 .navBar__button {
   margin: 1rem;
   justify-self: end;
+  background-color: transparent;
 }
 
 .navbar-links {
@@ -86,9 +88,7 @@
   background-color: var(--veryBlack);
   background-color: rgba(29, 30, 31, 0.75);
   backdrop-filter: blur(10px);
-  z-index: 5;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
-  transition: all 0.4s ease;
+  top: 24px;
 }
 
 @media (min-width: 765px) {
@@ -107,6 +107,7 @@
     position: static;
     right: 0;
     animation: none;
+    background-color: transparent;
   }
 
   .navbar-links {
@@ -128,9 +129,13 @@
   }
   .navBar__button {
     display: none;
+    background-color: initial;
   }
   .header > .header__button {
     display: block;
+  }
+  .isSticky{
+    top: 0;
   }
 }
 

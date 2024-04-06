@@ -12,7 +12,7 @@ export const ProyectPage = () => {
 
     return (
         <div
-            id='proyect'
+            id='projects'
             ref={proyectRef}
         >
             <h1 className="proyect__title">{projects.title}</h1>

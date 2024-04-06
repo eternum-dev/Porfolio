@@ -13,7 +13,7 @@ export const AboutMePage = () => {
 
     return (
         <div
-            id='about'
+            id='about-me'
             ref={aboutRef}
             style={{marginBottom:'2rem'}}
         >

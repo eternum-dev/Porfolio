@@ -10,13 +10,13 @@ import { Tooltip } from '../../../components/Tooltip';
 export const SectionBotton = () => {
     return (
         <section className='home__section-bot'>
-            <div className='home__wrapper-img'>
+            <div className='home__wrapper-img' id='hexagono'>
                 <img
-                    src="src\assets\perfil-porfolio.png"
+                    src={botPage.portfolioImg}
                     alt="yo"
                     className='home__img'
                 />
-                <img src="src/assets/podium.svg" alt="podium"  className='svg'/>
+                <img src={botPage.podiumImg} alt="podium"  className='svg'/>
             </div>
 
             <div style={{ display: 'grid', gap: '2rem' }}>
