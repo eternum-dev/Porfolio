@@ -1,26 +1,26 @@
 export const header = {
-    link: 'inicio',
+    link: 'home',
     navLink: [
         {
-            to: 'proyecto',
+            to: 'projects',
             name: 'Proyecto'
         },
         {
-            to: 'habilidades',
+            to: 'skills',
             name: 'Habilidades'
         },
         {
-            to: 'sobre-mi',
+            to: 'about-me',
             name: 'Sobre mí'
         }],
-    button: 'contacto'
+    button: 'contact'
 }
 
 export const footer = {
     link: 'inicio',
     navLink: [
         {
-            to: 'proyecto',
+            to: 'proyect',
             name: 'Proyecto'
         },
         {
