@@ -1,36 +1,19 @@
-import emailjs from '@emailjs/browser'
 import { useForm } from '../../../hooks/useForm';
 import { Networks } from '../../components/Networks';
 import { Github, Linkedin, Email, Cv } from '../../../assets/icons';
+import { sendEmail } from '../../../helpers/sendEmail';
 import './contactPage.css';
 
 
 
-
 const iconSize = '64';
-const myName = 'Alejandro'
 export const ContactPage = () => {
 
     const { onInputChange, formState } = useForm();
 
     const onSubmit = async (event) => {
         event.preventDefault();
-
-        emailjs
-            .send('service_zrxli9i',
-                'template_pohcepq',
-                { to_name: myName, ...formState },
-                { publicKey: 'cvGSDhlMofn5MHcZK', })
-            .then(
-                () => {
-                    console.log('SUCCESS!');
-                    console.log(formState);
-                },
-                (error) => {
-                    console.log(formState);
-                    console.log('FAILED...', error.text);
-                },
-            );
+        sendEmail(formState);
     }
 
 
