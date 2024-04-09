@@ -25,7 +25,8 @@
   mask-image: linear-gradient(black 95%, transparent);
   animation: up-down-infiniti  linear infinite 3s;
   
-}
+ }
+ 
 .svg {
   position: absolute;
   bottom: 0;

@@ -1,11 +1,6 @@
-import Github from '../../../../assets/icons/Github';
-import Linkedin from '../../../../assets/icons/Linkedin';
-import { Email } from '../../../../assets/icons';
 import { botPage } from '../../../../data/home';
-import { Networks } from '../../../components/Networks';
+import { Linkedin, Tooltip, Networks, Github, Email } from '../../../components';
 import './sectionBotton.css';
-import { Tooltip } from '../../../components/Tooltip';
-
 
 export const SectionBotton = () => {
     return (
