@@ -1,6 +1,6 @@
 import { useForm } from '../../../hooks/useForm';
-import { Networks } from '../../components/Networks';
-import { Github, Linkedin, Email, Cv } from '../../../assets/icons';
+import { Networks, Github, Linkedin, Email, Cv } from '../../components';
+// import { Github, Linkedin, Email, Cv } from '../../../assets/icons';
 import { sendEmail } from '../../../helpers/sendEmail';
 import './contactPage.css';
 
