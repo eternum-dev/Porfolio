@@ -7,7 +7,7 @@ export const useNavBar = (haderRef) => {
 
     const location = useLocation();
     const [scrollTop, setScrollTop] = useState(0);
-    const [page, setPage] = useState('');
+    // const [page, setPage] = useState('');
 
     const navRef = useRef();
     const openMenuRef = useRef();
@@ -15,15 +15,20 @@ export const useNavBar = (haderRef) => {
 
     useEffect(() => {
         const handleScroll = () => {
-            if (scrollTop < window.scrollY) {
-                haderRef.current.classList.add('isSticky');
-                setScrollTop(window.scrollY);
-            } else {
-                haderRef.current.classList.remove('isSticky');
-                setScrollTop(window.scrollY);
+
+            const classNavBar = navRef.current.className;
+
+            if (!classNavBar.includes('navBar')) {
+                if (scrollTop < window.scrollY) {
+                    haderRef.current.classList.add('isSticky');
+                    setScrollTop(window.scrollY);
+                } else {
+                    haderRef.current.classList.remove('isSticky');
+                    setScrollTop(window.scrollY);
+                }
             }
         };
-        
+
         window.addEventListener('scroll', handleScroll);
 
         return () => {
@@ -41,7 +46,7 @@ export const useNavBar = (haderRef) => {
                 let position = element.getBoundingClientRect();
 
                 window.scrollTo({
-                    top: position.top + window.scrollY - 132,
+                    top: position.top + window.scrollY,
                     behavior: 'smooth'
                 })
             }
@@ -69,6 +74,6 @@ export const useNavBar = (haderRef) => {
 
         showNav,
         isVisible,
-        setPage
+        // setPage
     }
 }
