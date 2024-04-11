@@ -1,13 +1,11 @@
-import { useEffect, useRef, useState } from "react";
-import { useLocation } from "react-router-dom";
-
+import { useEffect, useRef, useState } from 'react';
+import { useLocation } from 'react-router-dom';
 
 
 export const useNavBar = (haderRef) => {
 
     const location = useLocation();
     const [scrollTop, setScrollTop] = useState(0);
-    // const [page, setPage] = useState('');
 
     const navRef = useRef();
     const openMenuRef = useRef();
@@ -17,7 +15,7 @@ export const useNavBar = (haderRef) => {
         const handleScroll = () => {
 
             const classNavBar = navRef.current.className;
-
+            
             if (!classNavBar.includes('navBar')) {
                 if (scrollTop < window.scrollY) {
                     haderRef.current.classList.add('isSticky');

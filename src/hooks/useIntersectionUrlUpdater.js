@@ -1,5 +1,5 @@
-import { useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 
 
@@ -12,7 +12,7 @@ export const useIntersectionUrlUpdater = (componentRef) => {
             entries => {
                 entries.forEach((entry) => {
                     if (entry.isIntersecting) {
-                       
+
                         const newUrl = `${location.pathname}#${componentRef.current.id}`;
                         window.history.pushState(null, '', newUrl);
                     }
@@ -27,7 +27,5 @@ export const useIntersectionUrlUpdater = (componentRef) => {
         };
     }, []);
 
-    return {
-
-    }
+    return {}
 }

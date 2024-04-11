@@ -1,15 +1,14 @@
 import { useState } from 'react';
-// import { CardProyect } from './CardProyect';
-import './gridProyect.css';
-
 import PropTypes from 'prop-types';
-import { Card } from '../../../components/Card';
-import { Link } from 'react-router-dom';
 
+import { Link } from 'react-router-dom';
+import { alterProjects, workProyect } from '../../../../data/projects';
+import { Card } from '../../../components/Card';
+import './gridProyect.css';
 
 let i = 0;
 
-export const GridProyect = ({ allProyect }) => {
+export const GridProyect = () => {
 
     const [isVisible, setIsVisible] = useState(false);
 
@@ -19,7 +18,7 @@ export const GridProyect = ({ allProyect }) => {
             <h2>work</h2>
             <section className="proyect__grid">
                 {
-                    allProyect.map(proyect => (
+                    workProyect.arrProjects.map(proyect => (
                         <Card
                             key={i++}
                             data={proyect}
@@ -41,7 +40,7 @@ export const GridProyect = ({ allProyect }) => {
                 >
                     {
                         isVisible && (
-                            allProyect.map(proyect => (
+                            alterProjects.arrProjects.map(proyect => (
                                 <Link key={proyect.repository} >
                                     <Card
                                         data={proyect}

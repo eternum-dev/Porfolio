@@ -4,7 +4,6 @@ import emailjs from '@emailjs/browser';
 
 const myName = 'Alejandro'
 
-
 export const sendEmail = (formState) => {
     emailjs
         .send('service_zrxli9i',
