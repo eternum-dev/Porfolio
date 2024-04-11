@@ -1,4 +1,4 @@
-.semicircle {
+.pagebreak {
   position: relative;
   background: transparent;
   height: clamp(85px, 25vh, 180px);
@@ -8,7 +8,7 @@
   margin-bottom: 3rem;
 }
 
-.semicircle::before {
+.pagebreak::before {
   position: absolute;
   content: "";
   left: 50%;
