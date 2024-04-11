@@ -1,4 +1,4 @@
-import { botPage } from '../../../../data/home';
+import { moreInfo } from '../../../../data/home';
 import { Linkedin, Tooltip, Networks, Github, Email } from '../../../components';
 import './sectionBotton.css';
 
@@ -7,20 +7,20 @@ export const SectionBotton = () => {
         <section className='home__section-bot'>
             <div className='home__wrapper-img' id='hexagono'>
                 <img
-                    src={botPage.portfolioImg}
+                    src={moreInfo.portfolioImg}
                     alt="yo"
                     className='home__img'
                 />
-                <img src={botPage.podiumImg} alt="podium"  className='svg'/>
+                <img src={moreInfo.podiumImg} alt="podium"  className='svg'/>
             </div>
 
             <div style={{ display: 'grid', gap: '2rem' }}>
                 <article className="home__card">
                     <header>
-                        <h3>{botPage.title}</h3>
+                        <h3>{moreInfo.title}</h3>
                     </header>
                     {
-                        botPage.parrafos.map((parrafo) => (
+                        moreInfo.parrafos.map((parrafo) => (
                             <p className='home__parrafo' key={parrafo}>
                                 {parrafo}
                             </p>
