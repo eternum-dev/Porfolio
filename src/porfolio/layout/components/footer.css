@@ -22,9 +22,11 @@
   gap: 1.5rem;
   align-items: center;
 }
+
 .footer__link img {
   height: 5rem;
 }
+
 .footer__ul {
   display: flex;
   flex-direction: row;
@@ -35,16 +37,14 @@
   width: 3rem;
   height: 3rem;
 }
+
 @media (min-width: 765px) {
   .footer{
     grid-template-columns: 1fr 3fr 1fr;
   }
+  
   .footer__nav {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
- .footer__ul{
-
- }
-
 }
