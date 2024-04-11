@@ -2,7 +2,7 @@ export const aboutMe = {
     title: 'Más sobre mí',
     data: [
         {
-            name: 'estudios',
+            name: 'Estudios',
             contenedor: [
                 {
                     name: '"Analista Programador"',
@@ -28,14 +28,14 @@ export const aboutMe = {
                 {
                     name: '"TypeScript: Tu guía completa y manual de mano"',
                     date: 'diciembre 2023 - febrero 2023',
-                    description: 'Me sumergí en el mundo de TypeScript, mejorando mi comprensión sobre el tipado, funciones y variables. Conceptos que quería aprender para luego aplicarlos a React.',
+                    description: 'Me sumergí en el mundo de TypeScript, mejorando mi comprensión sobre el tipado, funciones y variables. Conceptos que quería aprender para luego aplicarlos con React.',
                     centro: 'DevTalles',
                     img: 'assets/images/typescript.jpg'
                 }
             ]
         },
         {
-            name: 'personal',
+            name: 'Area Personal',
             contenedor: [
                 {
                     name: 'Baloncesto',
