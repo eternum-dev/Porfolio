@@ -1,4 +1,4 @@
-.button {
+.redirectButton {
   background-color: var(--tobacco-brown-400);
   color: var(--tobacco-brown-950);
   font-weight: 300;
@@ -7,17 +7,20 @@
   border-radius: 0.4rem;
   cursor: pointer;
   transition: all 200ms;
+  justify-self: end;
 }
-.button:hover {
+
+.redirectButton:hover {
   background-color: var(--tobacco-brown-300);
   color: var(--tobacco-brown-950);
-  
 }
-.button:active {
+
+.redirectButton:active {
   background-color: var(--tobacco-brown-500);
   color: var(--tobacco-brown-950);
 }
-.button:disabled {
+
+.redirectButton:disabled {
   background-color: var(--tobacco-brown-800);
   color: var(--tobacco-brown-100);
 }

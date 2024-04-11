@@ -6,7 +6,7 @@ export const RedirectButton = ({ to }) => {
     return (
         <>
             <NavLink
-                className='button header__button'
+                className='redirectButton'
                 to={`/${to}`}
                 style={{ textTransform: 'capitalize' }}
             >
