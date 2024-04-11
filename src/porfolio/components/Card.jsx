@@ -6,16 +6,16 @@ import './card.css';
 export const Card = ({ data, children, isLinked = false }) => {
 
     return (
-        <article className={`cardProyect ${isLinked && 'cardProyect__active'}`}  >
-            <img src={data.img} alt={data.name} className="proyect__img" />
+        <article className={`card ${isLinked && 'card__active'}`}  >
+            <img src={data.img} alt={data.name} className="card__image" />
 
-            <div className='cardProyect__info'>
-                <header className='cardProyect__header'>
+            <div className='card__info'>
+                <header className='card__header'>
                     <h3>{data.name}</h3>
                 </header>
                 {
                     data.description &&
-                    <p className="proyect__description" >
+                    <p>
                         {data.description}
                     </p>
                 }
@@ -23,13 +23,13 @@ export const Card = ({ data, children, isLinked = false }) => {
 
             {
                 data.tecnologias &&
-                <div className='tec__container'>
+                <div className='card__wrapper'>
                     {
                         data.tecnologias &&
                         data.tecnologias.map(tec => (
                             <img src={`src/assets/stack-tech-icon/${tec.name}.svg`}
                                 alt={tec.name}
-                                className='tec__img'
+                                className='card__image--tec'
                                 key={tec.name}
                             />
                         ))

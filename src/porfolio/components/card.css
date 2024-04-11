@@ -1,20 +1,23 @@
-.cardProyect {
-  padding: 2rem;
+.card {
   background-color: var(--veryBlack);
   border-radius: 1rem;
-  height: 100%;
+  box-shadow: rgba(0, 0, 0, 0.24) 5px 12px 10px;
   display: grid;
   grid-template-rows: auto 1fr auto;
-  box-shadow: rgba(0, 0, 0, 0.24) 5px 12px 10px;
+  height: 100%;
+  padding: 2rem;
   transition: all ease-in 200ms;
 }
-.cardProyect__active{
+
+.card__active {
   cursor: pointer;
 }
-.cardProyect__active:hover {
-  filter: drop-shadow(0px 0px 1px  #aba79f);
+
+.card__active:hover {
+  filter: drop-shadow(0px 0px 1px #aba79f);
 }
-.proyect__img {
+
+.card__image {
   width: calc(100% + 4rem);
   height: 250px;
   object-fit: fill;
@@ -23,23 +26,23 @@
   top: -2rem;
   left: -2rem;
 }
-.cardProyect__header {
+
+.card__header {
   margin: 1rem 0 0rem;
   align-self: self-start;
-  
 }
-.cardProyect__info {
+
+.card__info {
   display: flex;
   flex-direction: column;
   gap: 2rem;
   margin-bottom: auto;
 }
-.tec__img {
+.card__image--tec {
   width: 2.5rem;
 }
-.tec__container {
+.card__wrapper {
   margin-top: 1rem;
   display: flex;
   gap: 1rem;
-
 }
