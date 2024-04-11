@@ -1,25 +1,25 @@
 import { Navigate, Route, Routes } from 'react-router-dom';
 import { LayoutPorfolio } from '../layout/LayoutPorfolio';
 import { AboutMePage, ContactPage, HomePage, ProyectPage, SkillPage } from '../pages';
-import { Separadores } from '../components/Separadores';
+import { PageBreak } from '../components/PageBreak';
 
 
 export const PorfolioRoutes = () => {
   return (
-    <Routes>   
+    <Routes>
 
-      <Route  
+      <Route
         path="/"
         element={
           <LayoutPorfolio >
             <HomePage />
-            <Separadores />
- 
+            <PageBreak />
+
             <ProyectPage />
-            <Separadores />
+            <PageBreak />
 
             <SkillPage />
-            <Separadores />
+            <PageBreak />
 
             <AboutMePage />
 
