@@ -1,6 +1,5 @@
 import { useRef } from 'react';
 import { SectionSkill } from './components/SectionSkill';
-import './skillsPage.css';
 import { useIntersectionUrlUpdater } from '../../../hooks/useIntersectionUrlUpdater';
 import { skills } from '../../../data/skills';
 
