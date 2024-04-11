@@ -1,4 +1,4 @@
 
 
-export * from './Footer';
-export * from './TopHeader';
+export { Footer } from './Footer';
+export { TopHeader } from './TopHeader';
