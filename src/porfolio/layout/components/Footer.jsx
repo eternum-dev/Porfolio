@@ -13,7 +13,7 @@ export const Footer = () => {
                 className='footer__link'
                 to={`#${footer.link}`}
             >
-                <img src="src\assets\logo.png" alt="logo" />
+                <img src="assets\logo.png" alt="logo" />
             </Link>
 
             <nav className='footer__nav'>
