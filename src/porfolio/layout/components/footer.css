@@ -4,8 +4,7 @@
   justify-content: space-between;
   align-items: center;
   background-color: var(--veryBlack);
-  padding: 0 2rem;
-  margin: 2rem 0 0 0;
+  padding: 1rem 2rem;
   gap: 1rem;
 }
 
@@ -21,6 +20,7 @@
   flex-direction: row;
   gap: 1.5rem;
   align-items: center;
+  justify-content: center;
 }
 
 .footer__link img {

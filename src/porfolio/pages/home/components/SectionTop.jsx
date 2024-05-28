@@ -8,7 +8,7 @@ export const SectionTop = () => {
                 <h1 className="home__name">{presentation.title}</h1>
             </header>
 
-            <h2 className="home__profesion">{presentation.moreInfo}</h2>
+            <h2 className="home__profesion">{presentation.subTitle}</h2>
         </section>
     )
 }
