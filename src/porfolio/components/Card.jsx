@@ -13,21 +13,23 @@ export const Card = ({ data, children, isLinked = false }) => {
                 <header className='card__header'>
                     <h3>{data.name}</h3>
                 </header>
-                {
+                {       
+               
                     data.description &&
                     <p>
                         {data.description}
-                    </p>
+                    </p> 
+                   
                 }
             </div>
 
             {
-                data.tecnologias &&
+                data.technologies &&
                 <div className='card__wrapper'>
                     {
-                        data.tecnologias &&
-                        data.tecnologias.map(tec => (
-                            <img src={`src/assets/stack-tech-icon/${tec.name}.svg`}
+                        data.technologies &&
+                        data.technologies.map(tec => (
+                            <img src={`assets/stack-tech-icon/${tec.name}.svg`}
                                 alt={tec.name}
                                 className='card__image--tec'
                                 key={tec.name}
@@ -51,7 +53,7 @@ Card.propTypes = {
         name: PropTypes.string.isRequired,
         img: PropTypes.string.isRequired,
         description: PropTypes.string,
-        tecnologias: PropTypes.arrayOf(
+        technologies: PropTypes.arrayOf(
             PropTypes.shape({
                 name: PropTypes.string.isRequired
             })
