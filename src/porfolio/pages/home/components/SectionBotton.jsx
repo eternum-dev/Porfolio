@@ -11,16 +11,16 @@ export const SectionBotton = () => {
                     alt="yo"
                     className='home__img'
                 />
-                <img src={moreInfo.podiumImg} alt="podium"  className='svg'/>
+                <img src={moreInfo.podiumImg} alt="podium" className='svg' />
             </div>
 
             <div style={{ display: 'grid', gap: '2rem' }}>
                 <article className="home__card">
                     <header>
-                        <h3>{moreInfo.title}</h3>
+                        <h2>{moreInfo.title}</h2>
                     </header>
                     {
-                        moreInfo.parrafos.map((parrafo) => (
+                        moreInfo.paragraph.map(parrafo => (
                             <p className='home__parrafo' key={parrafo}>
                                 {parrafo}
                             </p>
