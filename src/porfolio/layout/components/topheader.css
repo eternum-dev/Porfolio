@@ -64,7 +64,7 @@
   /* transition: all 300ms; */
 }
 
-.header > .header__button {
+.header > .redirectButton {
   display: none;
 }
 .hr {
@@ -98,6 +98,9 @@
     grid-template: "logo hamburger contact" / 1fr 3fr 1fr;
   }
   .header__ul {
+    display: flex;
+  }
+  .header >.redirectButton {
     display: flex;
   }
   .header__nav {
