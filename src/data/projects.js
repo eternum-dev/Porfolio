@@ -1,19 +1,19 @@
 
 
-export const workProyect = {
+export const workProject = {
     title: 'Proyectos',
-    tooltip: 'Esta seccion estara enfocada en mi experiencia profecional como desarrollador creando proyectos para usuarios reales',
+    tooltip: 'Esta sección estará enfocada en mi experiencia profesional como desarrollador creando proyectos para usuarios reales',
     arrProjects: [
         {
-            name: 'Caldero-Envios',
+            name: 'Caldero-Envíos',
             img: '#',
             description: `
-            caldero-envios es un proyecto desarrollado para una empresa gastronomica del sur de chile, para el desarrollo trabajé directamente tanto con el equipo encargado de caja como el del delivery.
+            caldero-envíos es un proyecto desarrollado para una empresa gastronómica del sur de chile, para el desarrollo trabajé directamente tanto con el equipo encargado de caja como el del delivery.
 
             Los Resultados:
-            - Una mejora de hasta el 200% en la  velocidad en la que se le entregala informancion del delivery clientes.
+            - Una mejora de hasta el 200% en la  velocidad en la que se le entrégala información del delivery clientes.
             - Se mejoro 20% la consistencia de las ganancias de los repartidores.
-            - Al tener mejor controlados los tiempos y valores, la satisfaccion  de los tambien creció.
+            - Al tener mejor controlados los tiempos y valores, la satisfacción  de los también creció.
                🌐🚀`,
             technologies: [
                 {
@@ -41,13 +41,13 @@ export const workProyect = {
 }
 export const alterProjects = {
     title: 'Mis Proyectos',
-    tooltip: 'En esta seccion ire añadiendo   practicas, desafios,  ejercicios y diversos proyectos que no sean de indole profecional pero aún así creo que pueden tener un valor añadido',
+    tooltip: 'En esta sección ire añadiendo   practicas, desafíos,  ejercicios y diversos proyectos que no sean de indole profesional pero aún así creo que pueden tener un valor añadido',
     arrProjects: [
         {
             name: 'Ip-Address-Tracker',
             img: 'assets/mocks/ip-address-tracker.png',
             description: `
-            Desarrollé 'IP Address Tracker' para Frontend Mentor, una aplicación web que utiliza APIs de geolocalización y mapas para ofrecer información detallada de IPs. Emocionado por futuras mejoras. 🌐🚀`,
+            Desarrollé 'IP Address Tracker' para Frontend Mentor, una aplicación web que utiliza APIs de geo-localización y mapas para ofrecer información detallada de IPs. Emocionado por futuras mejoras. 🌐🚀`,
             technologies: [
                 {
                     name: 'HTML5'
