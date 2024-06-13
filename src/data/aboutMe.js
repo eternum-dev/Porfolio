@@ -9,7 +9,7 @@ export const aboutMe = {
                     date: 'inicio de 2019 - 2021',
                     description: 'En mi etapa como estudiante en la universidad adquirí habilidades en HTML, CSS, JavaScript, Java y MySQL.',
                     centro: 'INACAP',
-                    img: 'assets/images/inacap.jpg'
+                    img: 'assets/images/inacap.webp'
                 },
                 {
                     name: '"React desde cero a experto"',
