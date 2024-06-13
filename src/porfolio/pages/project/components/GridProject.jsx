@@ -2,13 +2,13 @@ import { useState } from 'react';
 import PropTypes from 'prop-types';
 
 import { Link } from 'react-router-dom';
-import { alterProjects, workProyect } from '../../../../data/projects';
+import { alterProjects, workProject } from '../../../../data/projects';
 import { Card } from '../../../components/Card';
-import './gridProyect.css';
+import './gridProject.css';
 
 let i = 0;
 
-export const GridProyect = () => {
+export const GridProject = () => {
 
     const [isVisible, setIsVisible] = useState(false);
 
@@ -16,34 +16,34 @@ export const GridProyect = () => {
     return (
         <>
             <h2>work</h2>
-            <section className="proyect__grid">
+            <section className="project__grid">
                 {
-                    workProyect.arrProjects.map(proyect => (
+                    workProject.arrProjects.map(project => (
                         <Card
                             key={i++}
-                            data={proyect}
+                            data={project}
                             isLinked={true} />
                     ))
                 }
             </section>
 
             <h2>Practicas, ejercicios, otros</h2>
-            <div className='proyect__option'>
+            <div className='project__option'>
                 <button
-                    className='proyect__btn'
+                    className='project__btn'
                     onClick={() => setIsVisible(prev => !prev)}
                 >
                     {!isVisible ? 'abrir' : 'cerrar'}
                 </button>
-                <div className="proyect__grid"
+                <div className="project__grid"
                     style={{ display: !isVisible && 'none' }}
                 >
                     {
                         isVisible && (
-                            alterProjects.arrProjects.map(proyect => (
-                                <Link key={proyect.repository} >
+                            alterProjects.arrProjects.map(project => (
+                                <Link key={project.repository} >
                                     <Card
-                                        data={proyect}
+                                        data={project}
                                         isLinked={true} />
                                 </Link>
 
@@ -57,7 +57,7 @@ export const GridProyect = () => {
     )
 }
 
-GridProyect.propTypes = {
-    allProyect: PropTypes.any
+GridProject.propTypes = {
+    allProject: PropTypes.any
 };
 
