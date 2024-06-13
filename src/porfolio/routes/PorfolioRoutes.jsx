@@ -1,6 +1,6 @@
 import { Navigate, Route, Routes } from 'react-router-dom';
 import { LayoutPorfolio } from '../layout/LayoutPorfolio';
-import { AboutMePage, ContactPage, HomePage, ProyectPage, SkillPage } from '../pages';
+import { AboutMePage, ContactPage, HomePage, ProjectPage, SkillPage } from '../pages';
 import { PageBreak } from '../components/PageBreak';
 
 
@@ -15,7 +15,7 @@ export const PorfolioRoutes = () => {
             <HomePage />
             <PageBreak />
 
-            <ProyectPage />
+            <ProjectPage />
             <PageBreak />
 
             <SkillPage />
