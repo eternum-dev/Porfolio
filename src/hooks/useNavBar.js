@@ -44,7 +44,7 @@ export const useNavBar = (haderRef) => {
                 let position = element.getBoundingClientRect();
 
                 window.scrollTo({
-                    top: position.top + window.scrollY,
+                    top: position.top + window.scrollY ,
                     behavior: 'smooth'
                 })
             }
