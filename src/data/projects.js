@@ -7,14 +7,10 @@ export const workProject = {
         {
             name: 'Caldero-Envíos',
             img: '#',
-            description: `
-            caldero-envíos es un proyecto desarrollado para una empresa gastronómica del sur de chile, para el desarrollo trabajé directamente tanto con el equipo encargado de caja como el del delivery.
-
-            Los Resultados:
-            - Una mejora de hasta el 200% en la  velocidad en la que se le entrégala información del delivery clientes.
-            - Se mejoro 20% la consistencia de las ganancias de los repartidores.
-            - Al tener mejor controlados los tiempos y valores, la satisfacción  de los también creció.
-               🌐🚀`,
+            description: ` este  proyecto fue desarrollado para una empresa gastronómica del sur de chile, \nLos Resultados:
+            - Una mejora del 200% en la entrégala información del delivery clientes. 
+            - Un 20% mejora en la consistencia de los valores.
+            - Al tener mejor controlados los tiempos y valores, la satisfacción  de los también creció.`,
             technologies: [
                 {
                     name: 'HTML5'
@@ -46,8 +42,7 @@ export const alterProjects = {
         {
             name: 'Ip-Address-Tracker',
             img: 'assets/mocks/ip-address-tracker.webp',
-            description: `
-            Desarrollé 'IP Address Tracker' para Frontend Mentor, una aplicación web que utiliza APIs de geo-localización y mapas para ofrecer información detallada de IPs. Emocionado por futuras mejoras. 🌐🚀`,
+            description: `Desarrollé 'IP Address Tracker' para Frontend Mentor, una aplicación web que utiliza APIs de geo-localización y mapas para ofrecer información detallada de IPs. Emocionado por futuras mejoras. 🌐🚀`,
             technologies: [
                 {
                     name: 'HTML5'
