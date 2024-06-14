@@ -34,6 +34,7 @@
   width: 100%;
   object-fit: cover;
   max-height: 400px;
+  aspect-ratio: 2/3;
 }
 .home__card {
   padding: 3rem 2rem;
@@ -67,12 +68,12 @@
 
 @keyframes up-down-infiniti {
   0% {
-    transform: translateY(5px);
+    transform: translateY(3px);
   }
   50% {
-    transform: translateY(-5px);
+    transform: translateY(-3px);
   }
   100% {
-    transform: translateY(5px);
+    transform: translateY(3px);
   }
 }
