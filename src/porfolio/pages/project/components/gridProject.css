@@ -16,3 +16,9 @@
   border: 1px solid #ccc;
   width: 100px;
 }
+
+.project__grid p {
+  white-space: pre;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}

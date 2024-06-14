@@ -22,7 +22,8 @@ export const GridProject = () => {
                         <Card
                             key={i++}
                             data={project}
-                            isLinked={true} />
+                            isLinked={true} 
+                            fontSize='1.8rem'/>
                     ))
                 }
             </section>
