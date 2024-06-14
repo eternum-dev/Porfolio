@@ -3,7 +3,7 @@ import './card.css';
 
 
 
-export const Card = ({ data, children, isLinked = false }) => {
+export const Card = ({ data, children, isLinked = false, fontSize = '1.5rem' }) => {
 
     return (
         <article className={`card ${isLinked && 'card__active'}`}  >
@@ -13,13 +13,13 @@ export const Card = ({ data, children, isLinked = false }) => {
                 <header className='card__header'>
                     <h3>{data.name}</h3>
                 </header>
-                {       
-               
+                {
+
                     data.description &&
-                    <p>
+                    <p style={{ fontSize: fontSize }}>
                         {data.description}
-                    </p> 
-                   
+                    </p>
+
                 }
             </div>
 
@@ -61,5 +61,6 @@ Card.propTypes = {
         repository: PropTypes.string
     }).isRequired,
     children: PropTypes.object,
-    isLinked: PropTypes.bool
+    isLinked: PropTypes.bool,
+    fontSize: PropTypes.string
 };
